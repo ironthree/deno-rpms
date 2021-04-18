@@ -21,8 +21,6 @@ deno
       | → sval ^1.0.0-alpha.1
     | → rusty_v8
       | → align-data
-      | → fslock
-      | → trybuild ^1.0.42
     | → serde_v8
   | → deno_doc
   | → deno_lint
