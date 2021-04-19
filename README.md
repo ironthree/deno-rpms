@@ -5,8 +5,6 @@ RPM packages of deno and its dependencies.
 
 Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorpe/deno/>
 
-## 
-
 ## Dependency graph (incomplete)
 
 Packages that do not have a version listed with them are not packaged as RPMs
@@ -18,31 +16,81 @@ are not listed.
 deno
   | → deno_core
     | → log ^0.4.14
-      | → sval ^1.0.0-alpha.1
+      | → sval ^1.0.0-alpha.5
+        | → sval_derive ^1.0.0-alpha.5
+        | → value_bag
+          | → sval_json
+        | → wasm-bindgen-test
+          | → console_error_panic_hook
+          | → wasm-bindgen-futures
     | → rusty_v8
-      | → align-data
     | → serde_v8
+      | → serde_v8
   | → deno_doc
+    | → swc_common
+    | → swc_ecmascript
   | → deno_lint
+    | → dprint-swc-ecma-ast-view
+    | → swc_atoms
+    | → swc_common
   | → deno_runtime
+    | → deno_console
+    | → deno_core
+    | → deno_crypto
+    | → deno_fetch
+    | → deno_file
+    | → deno_url
+    | → deno_web
+    | → deno_webgpu
+    | → deno_webidl
+    | → deno_websocket
   | → dprint-plugin-json
+    | → dprint-core
+    | → jsonc-parser
   | → dprint-plugin-markdown
+    | → dprint-core
   | → dprint-plugin-typescript
+    | → dprint-core
+    | → dprint-swc-ecma-ast-view
+    | → swc_common
+    | → swc_ecmascript
   | → exec
   | → fancy-regex
   | → jsonc-parser
   | → log ^0.4.14
   | → lspower
+    | → lspower-macros
+    | → lsp-types
   | → notify ^5.0.0~pre.6
   | → ring ^0.16.20
   | → rustyline ^8.0.0
   | → rustyline_derive ^0.4.0
   | → sourcemap
   | → swc_bundler
+    | → swc_atoms
+    | → swc_common
+    | → swc_ecma_ast
+    | → swc_ecma_codegen
+    | → swc_ecma_parser
+    | → swc_ecma_transforms
+    | → swc_ecma_utils
+    | → swc_ecma_visit
   | → swc_common
+    | → swc_eq_ignore_macros
+    | → swc_visit
   | → swc_ecmascript
+    | → swc_ecma_ast
+    | → swc_ecma_codegen
+    | → swc_ecma_dep_graph
+    | → swc_ecma_parser
+    | → swc_ecma_transforms
+    | → swc_ecma_utils
+    | → swc_ecma_visit
   | → text-size
   | → tokio-rustls
+    | → rustls
+    | → webpki
+    | → webpki-roots
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
