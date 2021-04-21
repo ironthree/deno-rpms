@@ -28,9 +28,61 @@ deno
       | → serde_v8
   | → deno_doc
     | → swc_common
+      | → ast_node
+        | → pmutil
+        | → swc_macros_common
+          | → pmutil
+      | → from_variant
+        | → pmutil
+        | → swc_macros_common
+          | → pmutil
+      | → num-bigint ^0.2.0
+      | → (sourcemap)
+        | → if-chain
+      | → swc_eq_ignore_macros
+      | → swc_visit
+        | → swc_visit_macros
+          | → Inflector
     | → swc_ecmascript
+      | → swc_ecma_ast
+        | → is-macro
+        | → string_enum
+        | → swc_atoms
+        | → swc_common
+      | → swc_ecma_codegen
+        | → swc_ecma_codegen_macros
+      | → swc_ecma_dep_graph
+        | → swc_ecma_visit
+          | → swc_ecma_codegen
+            | → swc_ecma_codegen_macros
+      | → swc_ecma_parser
+        | → swc_ecma_ast
+          | → is-macro
+          | → string_enum
+          | → swc_atoms
+          | → swc_common
+        | → swc_ecma_visit
+          | → swc_ecma_codegen
+            | → swc_ecma_codegen_macros
+      | → swc_ecma_transforms
+        | → swc_ecma_transforms_base
+          | → swc_ecma_parser
+          | → swc_ecma_utils
+          | → swc_ecma_visit
+      | → swc_ecma_utils
+        | → swc_ecma_visit
+          | → swc_ecma_codegen
+            | → swc_ecma_codegen_macros
+      | → swc_ecma_visit
+        | → swc_ecma_codegen
+          | → swc_ecma_codegen_macros
   | → deno_lint
+    | → annotate-snippets
+      | → yansi-term
+    | → derive_more ^0.99.13
+      | → convert_case
     | → dprint-swc-ecma-ast-view
+      | → pretty_assertions ^0.7.1
     | → swc_atoms
     | → swc_common
   | → deno_runtime
@@ -39,11 +91,18 @@ deno
     | → deno_crypto
     | → deno_fetch
     | → deno_file
+    | → deno_timers
     | → deno_url
     | → deno_web
     | → deno_webgpu
     | → deno_webidl
     | → deno_websocket
+    | → notify ^5.0.0-pre.7
+    | → ring ^0.16.20
+    | → sys-info ^0.8.0
+    | → tokio-rustls
+    | → webpki
+    | → webpki-roots
   | → dprint-plugin-json
     | → dprint-core
     | → jsonc-parser
