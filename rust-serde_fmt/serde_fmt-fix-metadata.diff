@@ -1,0 +1,11 @@
+--- serde_fmt-1.0.1/Cargo.toml	2020-05-22T04:26:16+00:00
++++ serde_fmt-1.0.1/Cargo.toml	2021-04-21T09:11:52.805519+00:00
+@@ -15,7 +15,7 @@
+ name = "serde_fmt"
+ version = "1.0.1"
+ authors = ["Ashley Mannix <ashleymannix@live.com.au>"]
+-exclude = [".travis.yml"]
++exclude = [".travis.yml", "ci"]
+ description = "Write any serde::Serialize using the standard formatting APIs"
+ documentation = "https://docs.rs/serde_fmt"
+ readme = "README.md"
