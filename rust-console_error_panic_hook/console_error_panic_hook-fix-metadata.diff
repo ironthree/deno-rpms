@@ -1,0 +1,10 @@
+--- console_error_panic_hook-0.1.6/Cargo.toml	1970-01-01T00:00:00+00:00
++++ console_error_panic_hook-0.1.6/Cargo.toml	2021-04-21T08:54:13.085199+00:00
+@@ -19,6 +19,7 @@
+ categories = ["wasm"]
+ license = "Apache-2.0/MIT"
+ repository = "https://github.com/rustwasm/console_error_panic_hook"
++exclude = ["*.png"]
+ [dependencies.cfg-if]
+ version = "0.1.6"
+ 
