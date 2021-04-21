@@ -5,6 +5,15 @@ RPM packages of deno and its dependencies.
 
 Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorpe/deno/>
 
+## FIXMEs
+
+- `console_error_panic_hook`:
+  - missing LICENSE files
+- `sval_json`:
+  - missing LICENSE files
+- `value-bag`:
+  - one failing memory layout test on aarch64
+
 ## Dependency graph (incomplete)
 
 Packages that do not have a version listed with them are not packaged as RPMs
