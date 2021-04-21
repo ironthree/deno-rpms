@@ -1,0 +1,42 @@
+From 84f1241b685244d916ffa15d06614ec91e230e4f Mon Sep 17 00:00:00 2001
+From: Ben Noordhuis <info@bnoordhuis.nl>
+Date: Mon, 19 Apr 2021 16:43:58 +0200
+Subject: [PATCH] Fix bad assumption in static_assert (#668)
+
+v8::Location is the size of two ints, not the size of one size_t.
+
+`2 * sizeof(int) == sizeof(size_t)` on 64 bits architectures but not on
+32 bits architectures.
+
+Fixes #667.
+---
+ src/binding.cc | 2 +-
+ src/module.rs  | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/binding.cc b/src/binding.cc
+index 2f746ef3..8568a0b6 100644
+--- a/src/binding.cc
++++ b/src/binding.cc
+@@ -52,7 +52,7 @@ static_assert(sizeof(v8::ReturnValue<v8::Value>) == sizeof(size_t) * 1,
+ static_assert(sizeof(v8::TryCatch) == sizeof(size_t) * 6,
+               "TryCatch size mismatch");
+ 
+-static_assert(sizeof(v8::Location) == sizeof(size_t) * 1,
++static_assert(sizeof(v8::Location) == sizeof(int) * 2,
+               "Location size mismatch");
+ 
+ static_assert(sizeof(v8::SnapshotCreator) == sizeof(size_t) * 1,
+diff --git a/src/module.rs b/src/module.rs
+index 995804cc..7d68386c 100644
+--- a/src/module.rs
++++ b/src/module.rs
+@@ -195,7 +195,7 @@ extern "C" {
+ /// A location in JavaScript source.
+ #[repr(C)]
+ #[derive(Debug)]
+-pub struct Location([usize; 1]);
++pub struct Location([i32; 2]);
+ 
+ impl Location {
+   pub fn get_line_number(&self) -> int {

@@ -1,0 +1,56 @@
+diff --git a/build.rs b/build.rs
+index 0f53e65..7955490 100644
+--- a/build.rs
++++ b/build.rs
+@@ -1,5 +1,4 @@
+ // Copyright 2018-2019 the Deno authors. All rights reserved. MIT license.
+-use fslock::LockFile;
+ use std::collections::HashSet;
+ use std::env;
+ use std::fs;
+@@ -29,27 +28,7 @@ fn main() {
+     .unwrap_or(false);
+ 
+   if !(is_trybuild || is_cargo_doc | is_rls) {
+-    if env::var_os("V8_FROM_SOURCE").is_some() {
+-      build_v8()
+-    } else {
+-      // utilize a lockfile to prevent linking of
+-      // only partially downloaded static library.
+-      let root = env::current_dir().unwrap();
+-      let out_dir = env::var_os("OUT_DIR").unwrap();
+-      let lockfilepath = root
+-        .join(out_dir)
+-        .parent()
+-        .unwrap()
+-        .parent()
+-        .unwrap()
+-        .join("lib_download.fslock");
+-      println!("download lockfile: {:?}", &lockfilepath);
+-      let mut lockfile = LockFile::open(&lockfilepath)
+-        .expect("Couldn't open lib download lockfile.");
+-      lockfile.lock().expect("Couldn't get lock");
+-      download_static_lib_binaries();
+-      lockfile.unlock().expect("Couldn't unlock lockfile");
+-    }
++    build_v8()
+   }
+ 
+   if !(is_cargo_doc || is_rls) {
+@@ -337,12 +316,10 @@ fn is_compatible_clang_version(clang_path: &Path) -> bool {
+ }
+ 
+ fn find_compatible_system_clang() -> Option<PathBuf> {
+-  if let Ok(p) = env::var("CLANG_BASE_PATH") {
+-    let base_path = Path::new(&p);
+-    let clang_path = base_path.join("bin").join("clang");
+-    if is_compatible_clang_version(&clang_path) {
+-      return Some(base_path.to_path_buf());
+-    }
++  let base_path = Path::new("/usr");
++  let clang_path = base_path.join("bin").join("clang");
++  if is_compatible_clang_version(&clang_path) {
++    return Some(base_path.to_path_buf());
+   }
+ 
+   println!("using Chromiums clang");

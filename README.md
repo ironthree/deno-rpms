@@ -9,6 +9,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 
 - `console_error_panic_hook`:
   - missing LICENSE files
+- `rusty_v8`:
+  - missing LICENSE files
+  - build failures on i686 and armv7 due to memory constraints
 - `sval_json`:
   - missing LICENSE files
 - `value-bag`:
