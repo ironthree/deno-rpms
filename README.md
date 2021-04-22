@@ -89,6 +89,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `value-bag`:
   - one failing memory layout test on aarch64
+- `webpki`:
+  - bump base64 from 0.9 to 0.13
 
 ## Dependency graph (TODO only)
 
@@ -118,7 +120,6 @@ deno
     | → ring ^0.16.20
     | → sys-info ^0.8.0
     | → tokio-rustls
-    | → webpki
     | → webpki-roots
   | → lspower
     | → lspower-macros
@@ -131,7 +132,6 @@ deno
   | → text-size
   | → tokio-rustls
     | → rustls
-    | → webpki
     | → webpki-roots
   | → tower-test ^0.4.0
   | → trust-dns-client
