@@ -45,6 +45,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_ecma_codegen_macros`:
   - missing LICENSE files
+- `swc_ecma_dep_graph`:
+  - missing LICENSE files
 - `swc_ecma_parser`:
   - missing LICENSE files
   - tests require crates that use unstable proc-macro2 features
@@ -71,7 +73,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 deno
   | → deno_doc
     | → swc_ecmascript
-      | → swc_ecma_dep_graph
       | → swc_ecma_transforms
         | → swc_ecma_transforms_base
           | → swc_ecma_utils
@@ -124,7 +125,6 @@ deno
     | → swc_ecma_transforms
     | → swc_ecma_utils
   | → swc_ecmascript
-    | → swc_ecma_dep_graph
     | → swc_ecma_transforms
     | → swc_ecma_utils
   | → text-size
