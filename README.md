@@ -7,6 +7,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 
 ## FIXMEs
 
+- `ast_node`:
+  - missing LICENSE files
+  - bump darling from 0.10 to 0.12
 - `console_error_panic_hook`:
   - missing LICENSE files
 - `deno_core`:
