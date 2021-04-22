@@ -30,41 +30,18 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `value-bag`:
   - one failing memory layout test on aarch64
 
-## Dependency graph (incomplete)
+## Dependency graph (TODO only)
 
-Packages that do not have a version listed with them are not packaged as RPMs
-for Fedora yet, and those *with* a version are packaged, but have a version that
-is too old in Fedora. Crates that are already packaged with acceptable versions
-are not listed.
+- crates without version: not packaged as RPMs yet (neither Fedora nor COPR)
+- crates with version: version in Fedora is either too old or too new
+- crates that are packaged for Fedora or in this repo + COPR are not listed
 
 ```
 deno
-  | → deno_core
-    | → log ^0.4.14
-      | → sval ^1.0.0-alpha.5
-        | → sval_derive ^1.0.0-alpha.5
-        | → value_bag
-          | → sval_json
-        | → wasm-bindgen-test
-          | → console_error_panic_hook
-          | → wasm-bindgen-futures
-    | → rusty_v8
-    | → serde_v8
-      | → serde_v8
   | → deno_doc
     | → swc_common
-      | → ast_node
-        | → pmutil
-        | → swc_macros_common
-          | → pmutil
-      | → from_variant
-        | → pmutil
-        | → swc_macros_common
-          | → pmutil
-      | → num-bigint ^0.2.0
       | → (sourcemap)
         | → if-chain
-      | → swc_eq_ignore_macros
       | → swc_visit
         | → swc_visit_macros
           | → Inflector
@@ -141,7 +118,6 @@ deno
   | → exec
   | → fancy-regex
   | → jsonc-parser
-  | → log ^0.4.14
   | → lspower
     | → lspower-macros
     | → lsp-types
@@ -160,7 +136,6 @@ deno
     | → swc_ecma_utils
     | → swc_ecma_visit
   | → swc_common
-    | → swc_eq_ignore_macros
     | → swc_visit
   | → swc_ecmascript
     | → swc_ecma_ast
