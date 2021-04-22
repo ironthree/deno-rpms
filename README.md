@@ -15,6 +15,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_core`:
   - missing LICENSE file
   - bundled ICU data?
+- `enum_kind`:
+  - missing LICENSE files
 - `from_variant`:
   - missing LICENSE files
 - `Inflector`:
