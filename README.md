@@ -119,11 +119,8 @@ deno
     | → webpki
     | → webpki-roots
   | → dprint-plugin-json
-    | → dprint-core
   | → dprint-plugin-markdown
-    | → dprint-core
   | → dprint-plugin-typescript
-    | → dprint-core
   | → exec
   | → fancy-regex
   | → lspower
