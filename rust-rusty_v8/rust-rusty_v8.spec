@@ -20,7 +20,7 @@ Patch0:         rusty_v8-fix-metadata.diff
 # build system adaptations
 # * build using system clang
 # * build bundled v8 from source
-Patch1:         0001-use-system-clang-and-build-v8-from-source.patch
+Patch1:         0001-use-system-clang-and-build-v8-from-source-once.patch
 # upstream patch for build failure on 32-bit architectures
 Patch2:         https://github.com/denoland/rusty_v8/commit/84f1241.patch
 
@@ -41,7 +41,22 @@ Rust bindings to V8.}
 Summary:        %{summary}
 BuildArch:      noarch
 
-# rusty-v8              MIT
+# require statically linked v8 library
+# * v8 has to be compiled only *once* here
+# * saves build resources in dependent packages
+Requires:       %{name}-static-v8
+
+%description    devel %{_description}
+
+This package contains library source intended for building other packages
+which use "%{crate}" crate.
+
+%files          devel
+%{cargo_registry}/%{crate}-%{version_no_tilde}/
+
+%package     -n %{name}-static-v8
+Summary:        %{summary}
+
 # v8                    BSD
 # icu                   BSD
 # jinja2                BSD
@@ -53,7 +68,7 @@ BuildArch:      noarch
 # utf8-decoder          MIT
 # valgrind.h            BSD
 # vtune                 BSD or GPLv2
-License:        MIT and BSD and zlib and ASL 2.0 and CC0
+License:        BSD and zlib and MIT and ASL 2.0 and CC0
 
 Provides:       bundled(v8) = 9.1.269.5
 
@@ -77,25 +92,14 @@ Provides:       bundled(wasm-api) = 6db391e
 Provides:       bundled(siphash)
 Provides:       bundled(utf8-decoder)
 
-Requires:       /usr/bin/clang
-Requires:       /usr/bin/gn
-Requires:       /usr/bin/lld
-Requires:       /usr/bin/llvm-ar
-Requires:       /usr/bin/ninja
-Requires:       /usr/bin/python
+%description -n %{name}-static-v8 %{_description}
 
-Requires:       pkgconfig(glib-2.0)
-Requires:       pkgconfig(gmodule-2.0)
-Requires:       pkgconfig(gobject-2.0)
-Requires:       pkgconfig(gthread-2.0)
+This package contains the statically linked v8 library, so dependent
+packages can be built without having to recompile v8 itself every time.
 
-%description    devel %{_description}
-
-This package contains library source intended for building other packages
-which use "%{crate}" crate.
-
-%files          devel
-%{cargo_registry}/%{crate}-%{version_no_tilde}/
+%files       -n %{name}-static-v8
+%dir %{_libdir}/%{crate}
+%{_libdir}/%{crate}/v%{version_no_tilde}
 
 %package     -n %{name}+default-devel
 Summary:        %{summary}
@@ -143,14 +147,19 @@ echo 'pkgconfig(gobject-2.0)'
 echo 'pkgconfig(gthread-2.0)'
 
 %build
+# build bundled V8 from source
+export V8_FROM_SOURCE=1
 # show build script output for internal v8 build
 %cargo_build -- -vv
 
 %install
 %cargo_install
 
-# install gn build configuration
-cp -pav .gn %{buildroot}/%{cargo_registry}/%{crate}-%{version_no_tilde}/.gn
+# ship static v8 library so dependent packages don't have to recompile it
+mkdir -p %{buildroot}/%{_libdir}/%{crate}/v%{version_no_tilde}
+
+cp -pav target/release/gn_out/obj/lib%{crate}.a \
+    %{buildroot}/%{_libdir}/%{crate}/v%{version_no_tilde}/lib%{crate}.a
 
 %if %{with check}
 %check
