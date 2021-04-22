@@ -12,12 +12,15 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_core`:
   - missing LICENSE file
   - bundled ICU data?
+- `from_variant`:
+  - missing LICENSE files
 - `rusty_v8`:
   - missing LICENSE files
-  - build failures on i686 and armv7 due to memory constraints
 - `serde_v8`:
   - missing LICENSE file
 - `sval_json`:
+  - missing LICENSE files
+- `swc_macros_common`:
   - missing LICENSE files
 - `value-bag`:
   - one failing memory layout test on aarch64
