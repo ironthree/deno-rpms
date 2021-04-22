@@ -23,6 +23,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `sval_json`:
   - missing LICENSE files
+- `swc_eq_ignore_macros`:
+  - missing LICENSE files
 - `swc_macros_common`:
   - missing LICENSE files
 - `value-bag`:
