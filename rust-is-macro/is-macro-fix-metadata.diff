@@ -1,0 +1,11 @@
+--- is-macro-0.1.9/Cargo.toml	1970-01-01T00:00:00+00:00
++++ is-macro-0.1.9/Cargo.toml	2021-04-20T10:12:39.783660+00:00
+@@ -15,7 +15,7 @@
+ name = "is-macro"
+ version = "0.1.9"
+ authors = ["강동윤 <kdy1997.dev@gmail.com>"]
+-description = "Easily create methods for to use yout custom enum like Option / Result"
++description = "Easily create methods for custom enums like Option / Result"
+ documentation = "http://docs.rs/is-macro"
+ license = "MIT"
+ repository = "https://github.com/kdy1/is-macro"

@@ -19,6 +19,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `Inflector`:
   - missing LICENSE file
+- `is-macro`:
+  - missing LICENSE file
+  - fix typos in description
 - `rusty_v8`:
   - missing LICENSE files
 - `serde_v8`:
@@ -52,7 +55,6 @@ deno
   | → deno_doc
     | → swc_ecmascript
       | → swc_ecma_ast
-        | → is-macro
         | → string_enum
         | → swc_atoms
       | → swc_ecma_codegen
@@ -63,7 +65,6 @@ deno
             | → swc_ecma_codegen_macros
       | → swc_ecma_parser
         | → swc_ecma_ast
-          | → is-macro
           | → string_enum
           | → swc_atoms
         | → swc_ecma_visit
