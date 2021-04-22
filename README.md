@@ -15,6 +15,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_core`:
   - missing LICENSE file
   - bundled ICU data?
+- `dprint-swc-ecma-ast-view`:
+  - missing LICENSE file
 - `enum_kind`:
   - missing LICENSE files
 - `from_variant`:
@@ -99,8 +101,6 @@ deno
     | → tokio ^1.5.0
   | → deno_lint
     | → annotate-snippets
-    | → derive_more ^0.99.13
-    | → dprint-swc-ecma-ast-view
   | → deno_runtime
     | → deno_console
     | → deno_core
@@ -126,7 +126,6 @@ deno
     | → dprint-core
   | → dprint-plugin-typescript
     | → dprint-core
-    | → dprint-swc-ecma-ast-view
   | → exec
   | → fancy-regex
   | → jsonc-parser
