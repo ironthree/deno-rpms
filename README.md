@@ -63,6 +63,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_ecma_transforms_proposal`:
   - missing LICENSE files
+- `swc_ecma_transforms_react`:
+  - missing LICENSE files
 - `swc_ecma_transforms_typescript`:
   - missing LICENSE files
 - `swc_ecma_utils`:
