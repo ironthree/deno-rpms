@@ -47,6 +47,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_ecma_dep_graph`:
   - missing LICENSE files
+- `swc_ecma_loader`:
+  - missing LICENSE files
 - `swc_ecma_parser`:
   - missing LICENSE files
 - `swc_ecma_transforms_base`:
