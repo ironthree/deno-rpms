@@ -95,11 +95,12 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 ```
 deno
   | → deno_doc
+    | → futures ^0.3.14
+    | → tokio ^1.5.0
   | → deno_lint
     | → annotate-snippets
       | → yansi-term
     | → derive_more ^0.99.13
-      | → convert_case
     | → dprint-swc-ecma-ast-view
       | → pretty_assertions ^0.7.1
   | → deno_runtime
