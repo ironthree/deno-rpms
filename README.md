@@ -17,6 +17,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - bundled ICU data?
 - `from_variant`:
   - missing LICENSE files
+- `Inflector`:
+  - missing LICENSE file
 - `rusty_v8`:
   - missing LICENSE files
 - `serde_v8`:
@@ -44,7 +46,6 @@ deno
         | → if-chain
       | → swc_visit
         | → swc_visit_macros
-          | → Inflector
     | → swc_ecmascript
       | → swc_ecma_ast
         | → is-macro
