@@ -15,6 +15,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_core`:
   - missing LICENSE file
   - bundled ICU data?
+- `dprint-plugin-typescript`:
+  - bump dprint-swc-ecma-ast-view from 0.15 to 0.16
 - `dprint-swc-ecma-ast-view`:
   - missing LICENSE file
 - `enum_kind`:
@@ -118,7 +120,6 @@ deno
     | → tokio-rustls
     | → webpki
     | → webpki-roots
-  | → dprint-plugin-typescript
   | → lspower
     | → lspower-macros
     | → lsp-types
