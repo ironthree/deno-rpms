@@ -121,7 +121,6 @@ deno
   | → dprint-plugin-json
   | → dprint-plugin-markdown
   | → dprint-plugin-typescript
-  | → exec
   | → fancy-regex
   | → lspower
     | → lspower-macros
