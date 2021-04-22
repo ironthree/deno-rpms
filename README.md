@@ -30,6 +30,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - bump rustc_version from 0.2.3 to 0.3
 - `sval_json`:
   - missing LICENSE files
+- `swc_atoms`:
+  - missing LICENSE files
 - `swc_common`:
   - missing LICENSE files
   - bump parking_lot from 0.7.1 to 0.11
@@ -56,7 +58,6 @@ deno
     | → swc_ecmascript
       | → swc_ecma_ast
         | → string_enum
-        | → swc_atoms
       | → swc_ecma_codegen
         | → swc_ecma_codegen_macros
       | → swc_ecma_dep_graph
@@ -66,7 +67,6 @@ deno
       | → swc_ecma_parser
         | → swc_ecma_ast
           | → string_enum
-          | → swc_atoms
         | → swc_ecma_visit
           | → swc_ecma_codegen
             | → swc_ecma_codegen_macros
@@ -89,7 +89,6 @@ deno
       | → convert_case
     | → dprint-swc-ecma-ast-view
       | → pretty_assertions ^0.7.1
-    | → swc_atoms
   | → deno_runtime
     | → deno_console
     | → deno_core
@@ -128,7 +127,6 @@ deno
   | → rustyline ^8.0.0
   | → rustyline_derive ^0.4.0
   | → swc_bundler
-    | → swc_atoms
     | → swc_ecma_ast
     | → swc_ecma_codegen
     | → swc_ecma_parser
