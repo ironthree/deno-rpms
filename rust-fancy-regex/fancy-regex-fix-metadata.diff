@@ -1,0 +1,11 @@
+--- fancy-regex-0.5.0/Cargo.toml	2021-02-15T00:22:08+00:00
++++ fancy-regex-0.5.0/Cargo.toml	2021-04-20T22:09:10.358557+00:00
+@@ -37,7 +37,7 @@
+ version = "0.1.8"
+ 
+ [dev-dependencies.quickcheck]
+-version = "= 1.0.1"
++version = "1.0.1"
+ 
+ [features]
+ track_caller = []
