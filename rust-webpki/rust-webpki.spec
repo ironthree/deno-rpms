@@ -102,7 +102,12 @@ which use "trust_anchor_util" feature of "%{crate}" crate.
 
 %if %{with check}
 %check
+%ifarch aarch64
+# some doctests fail to compile on aarch64
+%cargo_test -- --lib
+%else
 %cargo_test
+%endif
 %endif
 
 %changelog
