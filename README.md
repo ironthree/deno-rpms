@@ -120,14 +120,12 @@ deno
     | → webpki-roots
   | → dprint-plugin-json
     | → dprint-core
-    | → jsonc-parser
   | → dprint-plugin-markdown
     | → dprint-core
   | → dprint-plugin-typescript
     | → dprint-core
   | → exec
   | → fancy-regex
-  | → jsonc-parser
   | → lspower
     | → lspower-macros
     | → lsp-types
