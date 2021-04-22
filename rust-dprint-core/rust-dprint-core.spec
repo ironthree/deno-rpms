@@ -5,7 +5,7 @@
 %global crate dprint-core
 
 Name:           rust-%{crate}
-Version:        0.37.0
+Version:        0.35.3
 Release:        1%{?dist}
 Summary:        Core rust library for dprint
 
@@ -124,18 +124,6 @@ which use "sysinfo" feature of "%{crate}" crate.
 %files       -n %{name}+sysinfo-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
-%package     -n %{name}+tracing-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+tracing-devel %{_description}
-
-This package contains library source intended for building other packages
-which use "tracing" feature of "%{crate}" crate.
-
-%files       -n %{name}+tracing-devel
-%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
-
 %package     -n %{name}+wasm-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -167,5 +155,5 @@ which use "wasm" feature of "%{crate}" crate.
 %endif
 
 %changelog
-* Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.37.0-1
+* Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.35.3-1
 - Initial package
