@@ -23,6 +23,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `serde_v8`:
   - missing LICENSE file
+- `sourcemap`:
+  - bump rustc_version from 0.2.3 to 0.3
 - `sval_json`:
   - missing LICENSE files
 - `swc_eq_ignore_macros`:
@@ -46,7 +48,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 deno
   | → deno_doc
     | → swc_common
-      | → (sourcemap)
     | → swc_ecmascript
       | → swc_ecma_ast
         | → is-macro
@@ -127,7 +128,6 @@ deno
   | → ring ^0.16.20
   | → rustyline ^8.0.0
   | → rustyline_derive ^0.4.0
-  | → sourcemap
   | → swc_bundler
     | → swc_atoms
     | → swc_common

@@ -1,0 +1,11 @@
+--- sourcemap-6.0.1/Cargo.toml	2020-07-21T09:41:20+00:00
++++ sourcemap-6.0.1/Cargo.toml	2021-04-20T00:11:44.996644+00:00
+@@ -56,7 +56,7 @@
+ [dependencies.url]
+ version = "2.1.1"
+ [build-dependencies.rustc_version]
+-version = "0.2.3"
++version = "0.3"
+ 
+ [features]
+ ram_bundle = ["scroll"]
