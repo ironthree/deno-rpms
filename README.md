@@ -49,10 +49,11 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_ecma_parser`:
   - missing LICENSE files
-  - tests require crates that use unstable proc-macro2 features
 - `swc_ecma_transforms_base`:
   - missing LICENSE files
 - `swc_ecma_transforms_macros`:
+  - missing LICENSE files
+- `swc_ecma_transforms_typescript`:
   - missing LICENSE files
 - `swc_ecma_utils`:
   - missing LICENSE files
