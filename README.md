@@ -28,6 +28,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `is-macro`:
   - missing LICENSE file
   - fix typos in description
+- `rustls`:
+  - missing LICENSE files
+  - two failing tests
 - `rusty_v8`:
   - missing LICENSE files
 - `serde_v8`:
@@ -121,8 +124,12 @@ deno
     | → sys-info ^0.8.0
     | → tokio-rustls
   | → lspower
+    | → async-tungstenite
+    | → auto_impl
     | → lspower-macros
     | → lsp-types
+    | → tower-test ^0.4.0
+    | → ws_stream_tungstenite
   | → notify ^5.0.0~pre.6
   | → ring ^0.16.20
   | → rustyline ^8.0.0
@@ -130,7 +137,6 @@ deno
   | → swc_bundler
   | → text-size
   | → tokio-rustls
-    | → rustls
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
