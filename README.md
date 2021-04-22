@@ -118,7 +118,6 @@ deno
     | → tokio-rustls
     | → webpki
     | → webpki-roots
-  | → dprint-plugin-json
   | → dprint-plugin-markdown
   | → dprint-plugin-typescript
   | → lspower
