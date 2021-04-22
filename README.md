@@ -29,6 +29,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_macros_common`:
   - missing LICENSE files
+- `swc_visit`:
+  - missing LICENSE files
 - `swc_visit_macros`:
   - missing LICENSE files
 - `value-bag`:
@@ -46,8 +48,6 @@ deno
     | → swc_common
       | → (sourcemap)
         | → if-chain
-      | → swc_visit
-        | → swc_visit_macros
     | → swc_ecmascript
       | → swc_ecma_ast
         | → is-macro
@@ -139,7 +139,6 @@ deno
     | → swc_ecma_utils
     | → swc_ecma_visit
   | → swc_common
-    | → swc_visit
   | → swc_ecmascript
     | → swc_ecma_ast
     | → swc_ecma_codegen
