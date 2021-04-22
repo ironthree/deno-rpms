@@ -120,7 +120,6 @@ deno
     | → ring ^0.16.20
     | → sys-info ^0.8.0
     | → tokio-rustls
-    | → webpki-roots
   | → lspower
     | → lspower-macros
     | → lsp-types
@@ -132,7 +131,6 @@ deno
   | → text-size
   | → tokio-rustls
     | → rustls
-    | → webpki-roots
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
