@@ -1,0 +1,11 @@
+--- debug-here-0.2.2/Cargo.toml	1970-01-01T00:00:00+00:00
++++ debug-here-0.2.2/Cargo.toml	2021-04-20T21:17:19.248048+00:00
+@@ -24,7 +24,4 @@
+ version = "1.1.0"
+ 
+ [dependencies.which]
+-version = "2.0"
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["debugapi"]
++version = "4.0"

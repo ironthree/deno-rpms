@@ -100,7 +100,6 @@ deno
     | → futures ^0.3.14
     | → tokio ^1.5.0
   | → deno_lint
-    | → annotate-snippets
   | → deno_runtime
     | → deno_console
     | → deno_core
