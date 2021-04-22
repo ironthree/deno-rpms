@@ -122,7 +122,6 @@ deno
     | → notify ^5.0.0-pre.7
     | → ring ^0.16.20
     | → sys-info ^0.8.0
-    | → tokio-rustls
   | → lspower
     | → async-tungstenite
     | → auto_impl
@@ -136,7 +135,6 @@ deno
   | → rustyline_derive ^0.4.0
   | → swc_bundler
   | → text-size
-  | → tokio-rustls
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
