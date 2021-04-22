@@ -50,6 +50,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `swc_ecma_parser`:
   - missing LICENSE files
   - tests require crates that use unstable proc-macro2 features
+- `swc_ecma_transforms_base`:
+  - missing LICENSE files
 - `swc_ecma_utils`:
   - missing LICENSE files
 - `swc_ecma_visit`:
@@ -76,7 +78,6 @@ deno
   | → deno_doc
     | → swc_ecmascript
       | → swc_ecma_transforms
-        | → swc_ecma_transforms_base
   | → deno_lint
     | → annotate-snippets
       | → yansi-term
