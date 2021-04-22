@@ -101,7 +101,6 @@ deno
     | → annotate-snippets
     | → derive_more ^0.99.13
     | → dprint-swc-ecma-ast-view
-      | → pretty_assertions ^0.7.1
   | → deno_runtime
     | → deno_console
     | → deno_core
