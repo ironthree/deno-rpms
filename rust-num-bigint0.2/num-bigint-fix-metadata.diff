@@ -1,0 +1,19 @@
+--- num-bigint-0.2.6/Cargo.toml	2020-01-27T19:59:21+00:00
++++ num-bigint-0.2.6/Cargo.toml	2021-04-19T23:21:31.123704+00:00
+@@ -49,16 +49,6 @@
+ version = "0.2.11"
+ default-features = false
+ 
+-[dependencies.quickcheck]
+-version = "0.8"
+-optional = true
+-default-features = false
+-
+-[dependencies.quickcheck_macros]
+-version = "0.8"
+-optional = true
+-default-features = false
+-
+ [dependencies.rand]
+ version = "0.5"
+ features = ["std"]
