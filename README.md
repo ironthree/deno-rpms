@@ -28,6 +28,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `sourcemap`:
   - bump rustc_version from 0.2.3 to 0.3
+- `string_enum`:
+  - missing LICENSE files
 - `sval_json`:
   - missing LICENSE files
 - `swc_atoms`:
@@ -59,14 +61,12 @@ deno
   | → deno_doc
     | → swc_ecmascript
       | → swc_ecma_ast
-        | → string_enum
       | → swc_ecma_codegen
       | → swc_ecma_dep_graph
         | → swc_ecma_visit
           | → swc_ecma_codegen
       | → swc_ecma_parser
         | → swc_ecma_ast
-          | → string_enum
         | → swc_ecma_visit
           | → swc_ecma_codegen
       | → swc_ecma_transforms
