@@ -99,7 +99,6 @@ deno
     | → tokio ^1.5.0
   | → deno_lint
     | → annotate-snippets
-      | → yansi-term
     | → derive_more ^0.99.13
     | → dprint-swc-ecma-ast-view
       | → pretty_assertions ^0.7.1

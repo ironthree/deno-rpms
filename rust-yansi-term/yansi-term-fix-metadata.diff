@@ -1,0 +1,13 @@
+--- yansi-term-0.1.2/Cargo.toml	2020-05-31T12:48:56+00:00
++++ yansi-term-0.1.2/Cargo.toml	2021-04-20T20:15:15.371072+00:00
+@@ -36,9 +36,7 @@
+ 
+ [features]
+ derive_serde_style = ["serde"]
+-[target."cfg(target_os=\"windows\")".dependencies.winapi]
+-version = "0.3.4"
+-features = ["consoleapi", "errhandlingapi", "fileapi", "handleapi", "processenv"]
++
+ [badges.maintenance]
+ status = "actively-developed"
+ 
