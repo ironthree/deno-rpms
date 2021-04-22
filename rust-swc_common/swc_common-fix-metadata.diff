@@ -1,0 +1,11 @@
+--- swc_common-0.10.17/Cargo.toml	1970-01-01T00:00:00+00:00
++++ swc_common-0.10.17/Cargo.toml	2021-04-20T00:09:08.972723+00:00
+@@ -56,7 +56,7 @@
+ version = "0.4"
+ 
+ [dependencies.parking_lot]
+-version = "0.7.1"
++version = "0.11"
+ optional = true
+ 
+ [dependencies.scoped-tls]
