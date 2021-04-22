@@ -41,6 +41,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - bump parking_lot from 0.7.1 to 0.11
 - `swc_ecma_ast`:
   - missing LICENSE files
+- `swc_ecma_codegen`:
+  - missing LICENSE files
 - `swc_ecma_codegen_macros`:
   - missing LICENSE files
 - `swc_ecma_parser`:
@@ -69,7 +71,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 deno
   | → deno_doc
     | → swc_ecmascript
-      | → swc_ecma_codegen
       | → swc_ecma_dep_graph
       | → swc_ecma_transforms
         | → swc_ecma_transforms_base
@@ -120,11 +121,9 @@ deno
   | → rustyline ^8.0.0
   | → rustyline_derive ^0.4.0
   | → swc_bundler
-    | → swc_ecma_codegen
     | → swc_ecma_transforms
     | → swc_ecma_utils
   | → swc_ecmascript
-    | → swc_ecma_codegen
     | → swc_ecma_dep_graph
     | → swc_ecma_transforms
     | → swc_ecma_utils
