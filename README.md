@@ -35,6 +35,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `swc_common`:
   - missing LICENSE files
   - bump parking_lot from 0.7.1 to 0.11
+- `swc_ecma_codegen_macros`:
+  - missing LICENSE files
 - `swc_eq_ignore_macros`:
   - missing LICENSE files
 - `swc_macros_common`:
@@ -59,17 +61,14 @@ deno
       | → swc_ecma_ast
         | → string_enum
       | → swc_ecma_codegen
-        | → swc_ecma_codegen_macros
       | → swc_ecma_dep_graph
         | → swc_ecma_visit
           | → swc_ecma_codegen
-            | → swc_ecma_codegen_macros
       | → swc_ecma_parser
         | → swc_ecma_ast
           | → string_enum
         | → swc_ecma_visit
           | → swc_ecma_codegen
-            | → swc_ecma_codegen_macros
       | → swc_ecma_transforms
         | → swc_ecma_transforms_base
           | → swc_ecma_parser
@@ -78,10 +77,8 @@ deno
       | → swc_ecma_utils
         | → swc_ecma_visit
           | → swc_ecma_codegen
-            | → swc_ecma_codegen_macros
       | → swc_ecma_visit
         | → swc_ecma_codegen
-          | → swc_ecma_codegen_macros
   | → deno_lint
     | → annotate-snippets
       | → yansi-term
