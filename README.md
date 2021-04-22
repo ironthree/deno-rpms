@@ -29,6 +29,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_macros_common`:
   - missing LICENSE files
+- `swc_visit_macros`:
+  - missing LICENSE files
 - `value-bag`:
   - one failing memory layout test on aarch64
 
