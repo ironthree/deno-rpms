@@ -50,6 +50,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `swc_ecma_parser`:
   - missing LICENSE files
   - tests require crates that use unstable proc-macro2 features
+- `swc_ecma_utils`:
+  - missing LICENSE files
 - `swc_ecma_visit`:
   - missing LICENSE files
 - `swc_eq_ignore_macros`:
@@ -75,8 +77,6 @@ deno
     | → swc_ecmascript
       | → swc_ecma_transforms
         | → swc_ecma_transforms_base
-          | → swc_ecma_utils
-      | → swc_ecma_utils
   | → deno_lint
     | → annotate-snippets
       | → yansi-term
@@ -123,10 +123,8 @@ deno
   | → rustyline_derive ^0.4.0
   | → swc_bundler
     | → swc_ecma_transforms
-    | → swc_ecma_utils
   | → swc_ecmascript
     | → swc_ecma_transforms
-    | → swc_ecma_utils
   | → text-size
   | → tokio-rustls
     | → rustls
