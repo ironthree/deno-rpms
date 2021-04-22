@@ -47,7 +47,6 @@ deno
   | → deno_doc
     | → swc_common
       | → (sourcemap)
-        | → if-chain
     | → swc_ecmascript
       | → swc_ecma_ast
         | → is-macro
