@@ -43,6 +43,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_ecma_codegen_macros`:
   - missing LICENSE files
+- `swc_ecma_visit`:
+  - missing LICENSE files
 - `swc_eq_ignore_macros`:
   - missing LICENSE files
 - `swc_macros_common`:
@@ -66,21 +68,12 @@ deno
     | → swc_ecmascript
       | → swc_ecma_codegen
       | → swc_ecma_dep_graph
-        | → swc_ecma_visit
-          | → swc_ecma_codegen
       | → swc_ecma_parser
-        | → swc_ecma_visit
-          | → swc_ecma_codegen
       | → swc_ecma_transforms
         | → swc_ecma_transforms_base
           | → swc_ecma_parser
           | → swc_ecma_utils
-          | → swc_ecma_visit
       | → swc_ecma_utils
-        | → swc_ecma_visit
-          | → swc_ecma_codegen
-      | → swc_ecma_visit
-        | → swc_ecma_codegen
   | → deno_lint
     | → annotate-snippets
       | → yansi-term
@@ -130,14 +123,12 @@ deno
     | → swc_ecma_parser
     | → swc_ecma_transforms
     | → swc_ecma_utils
-    | → swc_ecma_visit
   | → swc_ecmascript
     | → swc_ecma_codegen
     | → swc_ecma_dep_graph
     | → swc_ecma_parser
     | → swc_ecma_transforms
     | → swc_ecma_utils
-    | → swc_ecma_visit
   | → text-size
   | → tokio-rustls
     | → rustls
