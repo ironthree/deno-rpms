@@ -133,6 +133,7 @@ deno
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
         | → hyper-rustls
+          | → ct-logs
     | → deno_webgpu
       | → wgpu-core
     | → deno_websocket
@@ -152,7 +153,6 @@ deno
   | → rustyline ^8.0.0
   | → rustyline_derive ^0.4.0
   | → swc_bundler
-  | → text-size
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
