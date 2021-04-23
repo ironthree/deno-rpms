@@ -1,0 +1,12 @@
+--- rspirv-0.7.0/Cargo.toml	2020-08-22T08:02:37+00:00
++++ rspirv-0.7.0/Cargo.toml	2021-04-23T12:48:26.809040+00:00
+@@ -24,9 +24,6 @@
+ 
+ [lib]
+ path = "lib.rs"
+-[dependencies.clippy]
+-version = "0.0"
+-optional = true
+ 
+ [dependencies.derive_more]
+ version = "0.15"
