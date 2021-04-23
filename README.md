@@ -42,6 +42,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `from_variant`:
   - missing LICENSE files
+- `gpu-alloc-types`:
+  - missing LICENSE files
 - `gpu-descriptor-types`:
   - missing LICENSE files
 - `Inflector`:
