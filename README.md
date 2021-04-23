@@ -150,7 +150,6 @@ deno
         | → gpu-alloc
         | → gpu-descriptor
         | → naga
-          | → pomelo
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
