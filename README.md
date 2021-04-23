@@ -42,6 +42,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `from_variant`:
   - missing LICENSE files
+- `gpu-descriptor-types`:
+  - missing LICENSE files
 - `Inflector`:
   - missing LICENSE file
 - `is-macro`:
@@ -142,6 +144,8 @@ deno
         | → gpu-alloc
         | → gpu-descriptor
         | → naga
+          | → insta ^1.3
+          | → spirv_headers
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
