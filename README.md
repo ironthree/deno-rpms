@@ -24,6 +24,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_lint`:
   - bump deno_core from 0.84 to 0.85
   - shebang mangling of executable typescript files broken
+- `deno_timers`:
+  - missing LICENSe file
 - `dprint-plugin-typescript`:
   - bump dprint-swc-ecma-ast-view from 0.15 to 0.16
 - `dprint-swc-ecma-ast-view`:
@@ -118,7 +120,6 @@ deno
   | → deno_runtime
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
-    | → deno_timers
     | → deno_url
     | → deno_web
     | → deno_webgpu
