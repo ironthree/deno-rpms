@@ -15,6 +15,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_core`:
   - missing LICENSE file
   - bundled ICU data?
+- `deno_lint`:
+  - bump deno_core from 0.84 to 0.85
+  - shebang mangling of executable typescript files broken
 - `dprint-plugin-typescript`:
   - bump dprint-swc-ecma-ast-view from 0.15 to 0.16
 - `dprint-swc-ecma-ast-view`:
@@ -106,7 +109,6 @@ deno
   | → deno_doc
     | → futures ^0.3.14
     | → tokio ^1.5.0
-  | → deno_lint
   | → deno_runtime
     | → deno_console
     | → deno_core
