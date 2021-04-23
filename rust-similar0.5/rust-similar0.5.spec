@@ -5,7 +5,7 @@
 
 %global crate similar
 
-Name:           rust-%{crate}
+Name:           rust-%{crate}0.5
 Version:        0.5.0
 Release:        1%{?dist}
 Summary:        Diff library for Rust
@@ -121,4 +121,4 @@ which use "unicode-segmentation" feature of "%{crate}" crate.
 
 %changelog
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.5.0-1
-- Initial package
+- Initial compat package for similar 0.5
