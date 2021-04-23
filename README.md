@@ -10,6 +10,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `ast_node`:
   - missing LICENSE files
   - bump darling from 0.10 to 0.12
+- `async-stream`:
+  - enable tests after updating tokio-test to ^0.4
 - `console_error_panic_hook`:
   - missing LICENSE files
 - `deno_console`:
@@ -129,7 +131,6 @@ deno
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
         | → hyper-rustls
-          | → async-stream
     | → deno_webgpu
       | → wgpu-core
       | → wgpu-types
