@@ -147,6 +147,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - one failing memory layout test on aarch64
 - `webpki`:
   - bump base64 from 0.9 to 0.13
+- `wgpu-core`:
+  - missing LICENSE file
 - `wgpu-types`:
   - missing LICENSE file
 
@@ -160,7 +162,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 deno
   | → deno_runtime
     | → deno_webgpu
-      | → wgpu-core
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
