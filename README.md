@@ -130,8 +130,6 @@ deno
       | → reqwest/rustls-tls ^0.11.2
         | → hyper-rustls
           | → async-stream
-          | → rustls-native-certs
-        | → rustls-native-certs
     | → deno_webgpu
       | → wgpu-core
       | → wgpu-types
