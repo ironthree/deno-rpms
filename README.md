@@ -42,6 +42,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `from_variant`:
   - missing LICENSE files
+- `gpu-alloc`:
+  - missing LICENSE files
 - `gpu-alloc-types`:
   - missing LICENSE files
 - `gpu-descriptor`:
@@ -151,7 +153,6 @@ deno
         | → gfx-backend-gl
         | → gfx-backend-vulkan
         | → gfx-hal
-        | → gpu-alloc
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
