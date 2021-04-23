@@ -1,0 +1,34 @@
+--- glow-0.7.2/Cargo.toml	2021-01-21T03:21:24+00:00
++++ glow-0.7.2/Cargo.toml	2021-04-23T17:33:37.777215+00:00
+@@ -29,28 +29,8 @@
+ path = "src/lib.rs"
+ 
+ [features]
+-default = ["web-sys"]
+-web-sys = ["web_sys", "js-sys", "wasm-bindgen"]
++default = []
++
+ [target."cfg(not(any(target_arch = \"wasm32\")))".dependencies.glutin]
+-version = "0.24"
++version = "0.26"
+ optional = true
+-
+-[target."cfg(not(any(target_arch = \"wasm32\")))".dependencies.sdl2]
+-version = "0.34"
+-optional = true
+-[target."cfg(target_arch = \"wasm32\")".dependencies.js-sys]
+-version = "~0.3"
+-optional = true
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.slotmap]
+-version = "0.4"
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.wasm-bindgen]
+-version = "~0.2"
+-optional = true
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.web_sys]
+-version = "~0.3.37"
+-features = ["Document", "Element", "HtmlCanvasElement", "HtmlImageElement", "ImageBitmap", "WebGlActiveInfo", "WebGlBuffer", "WebGlFramebuffer", "WebGlProgram", "WebGlQuery", "WebGlRenderbuffer", "WebGlRenderingContext", "WebGl2RenderingContext", "WebGlSampler", "WebGlShader", "WebGlSync", "WebGlTexture", "WebGlTransformFeedback", "WebGlUniformLocation", "WebGlVertexArrayObject", "Window", "AngleInstancedArrays", "ExtBlendMinmax", "ExtColorBufferFloat", "ExtColorBufferHalfFloat", "ExtDisjointTimerQuery", "ExtFragDepth", "ExtShaderTextureLod", "ExtSRgb", "ExtTextureFilterAnisotropic", "OesElementIndexUint", "OesStandardDerivatives", "OesTextureFloat", "OesTextureFloatLinear", "OesTextureHalfFloat", "OesTextureHalfFloatLinear", "OesVertexArrayObject", "WebglColorBufferFloat", "WebglCompressedTextureAstc", "WebglCompressedTextureEtc", "WebglCompressedTextureEtc1", "WebglCompressedTexturePvrtc", "WebglCompressedTextureS3tc", "WebglCompressedTextureS3tcSrgb", "WebglDebugRendererInfo", "WebglDebugShaders", "WebglDepthTexture", "WebglDrawBuffers", "WebglLoseContext"]
+-optional = true
+-package = "web-sys"
