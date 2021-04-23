@@ -136,6 +136,14 @@ deno
           | → ct-logs
     | → deno_webgpu
       | → wgpu-core
+        | → cfg_aliases
+        | → gfx-backend-empty
+        | → gfx-backend-gl
+        | → gfx-backend-vulkan
+        | → gfx-hal
+        | → gpu-alloc
+        | → gpu-descriptor
+        | → naga
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
