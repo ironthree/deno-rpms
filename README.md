@@ -19,6 +19,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - bundled ICU data?
 - `deno_crypto`:
   - missing LICENSE file
+- `deno_file`:
+  - missing LICENSE file
 - `deno_lint`:
   - bump deno_core from 0.84 to 0.85
   - shebang mangling of executable typescript files broken
@@ -115,7 +117,7 @@ deno
     | → tokio ^1.5.0
   | → deno_runtime
     | → deno_fetch
-    | → deno_file
+      | → reqwest/rustls-tls ^0.11.2
     | → deno_timers
     | → deno_url
     | → deno_web
