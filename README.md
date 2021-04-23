@@ -62,6 +62,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `sourcemap`:
   - bump rustc_version from 0.2.3 to 0.3
+- `spirv_headers`:
+  - missing LICENSE file
 - `string_enum`:
   - missing LICENSE files
 - `sval_json`:
@@ -147,7 +149,6 @@ deno
         | → gpu-descriptor
         | → naga
           | → insta ^1.3
-          | → spirv_headers
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
