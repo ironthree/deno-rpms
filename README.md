@@ -7,6 +7,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 
 ## FIXMEs
 
+- `ash`:
+  - Rust source files have executable bits
+  - missing LICENSE file
 - `ast_node`:
   - missing LICENSE files
   - bump darling from 0.10 to 0.12
@@ -156,7 +159,6 @@ deno
     | → deno_webgpu
       | → wgpu-core
         | → gfx-backend-vulkan
-          | → ash
           | → inplace_it
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
