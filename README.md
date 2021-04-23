@@ -48,6 +48,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `rustls`:
   - missing LICENSE files
   - two failing tests
+- `rustls-native-certs`:
+  - exclude upstream-only CI files
 - `rusty_v8`:
   - missing LICENSE files
 - `serde_v8`:
@@ -126,10 +128,15 @@ deno
   | → deno_runtime
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
+        | → hyper-rustls
+          | → async-stream
+          | → rustls-native-certs
+        | → rustls-native-certs
     | → deno_webgpu
       | → wgpu-core
       | → wgpu-types
     | → deno_websocket
+      | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
     | → ring ^0.16.20
     | → sys-info ^0.8.0
