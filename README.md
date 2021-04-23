@@ -51,6 +51,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `is-macro`:
   - missing LICENSE file
   - fix typos in description
+- `naga`:
+  - missing LICENSE files
 - `pomelo-impl`:
   - missing LICENSE files
 - `rustls`:
@@ -149,7 +151,6 @@ deno
         | → gfx-hal
         | → gpu-alloc
         | → gpu-descriptor
-        | → naga
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
