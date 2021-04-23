@@ -151,7 +151,6 @@ deno
     | → deno_webgpu
       | → wgpu-core
         | → gfx-backend-gl
-          | → khronos-egl
           | → spirv_cross
         | → gfx-backend-vulkan
           | → ash
