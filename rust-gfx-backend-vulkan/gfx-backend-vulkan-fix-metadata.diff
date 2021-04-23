@@ -1,0 +1,14 @@
+--- gfx-backend-vulkan-0.7.0/Cargo.toml	2021-01-30T18:06:26+00:00
++++ gfx-backend-vulkan-0.7.0/Cargo.toml	2021-04-23T14:19:10.484089+00:00
+@@ -65,11 +65,3 @@
+ [features]
+ default = []
+ use-rtld-next = ["shared_library"]
+-[target."cfg(target_os = \"macos\")".dependencies.core-graphics-types]
+-version = "0.1"
+-
+-[target."cfg(target_os = \"macos\")".dependencies.objc]
+-version = "0.2.5"
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["libloaderapi", "windef", "winuser"]
