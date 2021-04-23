@@ -24,6 +24,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - bundled ICU data?
 - `deno_crypto`:
   - missing LICENSE file
+- `deno_fetch`:
+  - missing LICENSE file
 - `deno_file`:
   - missing LICENSE file
 - `deno_lint`:
@@ -157,7 +159,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 ```
 deno
   | → deno_runtime
-    | → deno_fetch
     | → deno_webgpu
       | → wgpu-core
     | → deno_websocket
