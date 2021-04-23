@@ -1,0 +1,15 @@
+--- gfx-backend-gl-0.7.1/Cargo.toml	2021-02-24T20:27:59+00:00
++++ gfx-backend-gl-0.7.1/Cargo.toml	2021-04-23T14:15:25.899541+00:00
+@@ -70,12 +70,3 @@
+ 
+ [target."cfg(not(target_arch = \"wasm32\"))".dependencies.libloading]
+ version = "0.6"
+-[target."cfg(target_arch = \"wasm32\")".dependencies.js-sys]
+-version = "0.3.6"
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.wasm-bindgen]
+-version = "0.2.60"
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.web-sys]
+-version = "0.3.6"
+-features = ["console", "Document", "Element", "HtmlCanvasElement", "HtmlElement", "Node", "Performance", "WebGlBuffer", "WebGlRenderingContext", "WebGl2RenderingContext", "WebGlProgram", "WebGlSampler", "WebGlShader", "WebGlTexture", "Window"]

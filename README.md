@@ -46,6 +46,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `gfx-backend-empty`:
   - missing LICENSE files
+- `gfx-backend-gl`:
+  - missing LICENSE files
 - `gfx-hal`:
   - missing LICENSE files
 - `gpu-alloc`:
@@ -153,7 +155,6 @@ deno
     | → deno_fetch
     | → deno_webgpu
       | → wgpu-core
-        | → gfx-backend-gl
         | → gfx-backend-vulkan
           | → ash
           | → inplace_it
