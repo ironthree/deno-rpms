@@ -144,9 +144,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 
 ```
 deno
-  | → deno_doc
-    | → futures ^0.3.14
-    | → tokio ^1.5.0
   | → deno_runtime
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
