@@ -1,0 +1,11 @@
+--- derive_more-0.15.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ derive_more-0.15.0/Cargo.toml	2021-04-23T13:04:40.513726+00:00
+@@ -48,7 +48,7 @@
+ version = "0.15"
+ features = ["extra-traits"]
+ [build-dependencies.rustc_version]
+-version = "0.2"
++version = "0.3"
+ 
+ [features]
+ nightly = []

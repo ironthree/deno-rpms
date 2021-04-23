@@ -148,7 +148,7 @@ deno
         | → gpu-alloc
         | → gpu-descriptor
         | → naga
-          | → insta ^1.3
+          | → rspirv
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
