@@ -135,7 +135,6 @@ deno
         | → hyper-rustls
     | → deno_webgpu
       | → wgpu-core
-        | → cfg_aliases
         | → gfx-backend-empty
         | → gfx-backend-gl
         | → gfx-backend-vulkan
