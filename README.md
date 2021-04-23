@@ -42,6 +42,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `from_variant`:
   - missing LICENSE files
+- `gfx-auxil`:
+  - missing LICENSE files
 - `gfx-backend-empty`:
   - missing LICENSE files
 - `gfx-hal`:
@@ -146,7 +148,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 deno
   | → deno_runtime
     | → deno_fetch
-      | → reqwest/rustls-tls ^0.11.2
     | → deno_webgpu
       | → wgpu-core
         | → gfx-backend-gl
