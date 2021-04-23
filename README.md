@@ -133,7 +133,6 @@ deno
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
         | → hyper-rustls
-          | → ct-logs
     | → deno_webgpu
       | → wgpu-core
         | → cfg_aliases
