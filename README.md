@@ -37,6 +37,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `deno_web`:
   - missing LICENSE file
+- `deno_webgpu`:
+  - missing LICENSE file
 - `deno_webidl`:
   - missing LICENSE file
 - `dprint-plugin-typescript`:
@@ -161,7 +163,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 ```
 deno
   | → deno_runtime
-    | → deno_webgpu
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
