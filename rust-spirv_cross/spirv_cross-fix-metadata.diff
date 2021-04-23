@@ -1,0 +1,11 @@
+--- spirv_cross-0.23.1/Cargo.toml	2021-03-03T04:24:56+00:00
++++ spirv_cross-0.23.1/Cargo.toml	2021-04-23T17:47:01.161946+00:00
+@@ -31,8 +31,3 @@
+ [target."cfg(not(target_arch = \"wasm32\"))".build-dependencies.cc]
+ version = "1"
+ features = ["parallel"]
+-[target.wasm32-unknown-unknown.dependencies.js-sys]
+-version = "0.3.10"
+-
+-[target.wasm32-unknown-unknown.dependencies.wasm-bindgen]
+-version = "0.2.33"

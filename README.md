@@ -76,6 +76,9 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `sourcemap`:
   - bump rustc_version from 0.2.3 to 0.3
+- `spirv_cross`:
+  - bundled SPIRV-Cross
+  - missing license files
 - `spirv_headers`:
   - missing LICENSE file
 - `string_enum`:
@@ -151,7 +154,6 @@ deno
     | → deno_webgpu
       | → wgpu-core
         | → gfx-backend-gl
-          | → spirv_cross
         | → gfx-backend-vulkan
           | → ash
           | → inplace_it
