@@ -150,11 +150,16 @@ deno
   | → deno_runtime
     | → deno_fetch
       | → reqwest/rustls-tls ^0.11.2
-        | → hyper-rustls
     | → deno_webgpu
       | → wgpu-core
         | → gfx-backend-gl
+          | → gfx-auxil
+          | → glow
+          | → khronos-egl
+          | → spirv_cross
         | → gfx-backend-vulkan
+          | → ash
+          | → inplace_it
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
@@ -176,6 +181,11 @@ deno
   | → trust-dns-client
   | → trust-dns-server
 ```
+
+## Pending package changes in Fedora
+
+- enable Rustls features in `reqwest`
+- enable Rustls features in `trust-dns-*`
 
 ## License
 
