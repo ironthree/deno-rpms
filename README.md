@@ -12,6 +12,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - bump darling from 0.10 to 0.12
 - `console_error_panic_hook`:
   - missing LICENSE files
+- `deno_console`:
+  - missing LICENSE file
 - `deno_core`:
   - missing LICENSE file
   - bundled ICU data?
@@ -110,7 +112,6 @@ deno
     | → futures ^0.3.14
     | → tokio ^1.5.0
   | → deno_runtime
-    | → deno_console
     | → deno_core
     | → deno_crypto
     | → deno_fetch
