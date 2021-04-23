@@ -159,7 +159,6 @@ deno
     | → deno_webgpu
       | → wgpu-core
         | → gfx-backend-vulkan
-          | → inplace_it
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
