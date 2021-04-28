@@ -72,6 +72,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `is-macro`:
   - missing LICENSE file
   - fix typos in description
+- `lspower-macros`:
+  - missing LICENSE files
 - `naga`:
   - missing LICENSE files
 - `pomelo-impl`:
@@ -172,7 +174,6 @@ deno
   | → lspower
     | → async-tungstenite
     | → auto_impl
-    | → lspower-macros
     | → ws_stream_tungstenite
   | → notify ^5.0.0~pre.6
   | → trust-dns-client
