@@ -1,0 +1,16 @@
+--- femme-2.1.1/Cargo.toml	2020-08-10T13:59:21+00:00
++++ femme-2.1.1/Cargo.toml	2021-04-28T23:38:02.172034+00:00
+@@ -38,13 +38,3 @@
+ version = "1.0.56"
+ [dev-dependencies.kv-log-macro]
+ version = "1.0.5"
+-[target."cfg(target_arch = \"wasm32\")".dependencies.js-sys]
+-version = "0.3.25"
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.wasm-bindgen]
+-version = "0.2.48"
+-features = ["serde-serialize"]
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.web-sys]
+-version = "0.3.25"
+-features = ["console"]
