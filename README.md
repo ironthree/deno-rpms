@@ -180,7 +180,6 @@ deno
   | → notify ^5.0.0~pre.6
   | → ring ^0.16.20
   | → rustyline ^8.0.0
-  | → rustyline_derive ^0.4.0
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
