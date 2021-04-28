@@ -174,7 +174,6 @@ deno
     | → sys-info ^0.8.0
   | → lspower
     | → async-tungstenite
-      | → async-std
     | → auto_impl
     | → ws_stream_tungstenite
   | → trust-dns-client

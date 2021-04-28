@@ -1,0 +1,38 @@
+--- async-std-1.9.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ async-std-1.9.0/Cargo.toml	2021-04-28T22:47:51.007880+00:00
+@@ -117,11 +117,10 @@
+ [features]
+ alloc = ["futures-core/alloc", "pin-project-lite"]
+ attributes = ["async-attributes"]
+-default = ["std", "async-global-executor", "async-io", "futures-lite", "kv-log-macro", "log", "num_cpus", "pin-project-lite", "gloo-timers"]
++default = ["std", "async-global-executor", "async-io", "futures-lite", "kv-log-macro", "log", "num_cpus", "pin-project-lite"]
+ docs = ["attributes", "unstable", "default"]
+-std = ["alloc", "crossbeam-utils", "futures-core/std", "futures-io", "memchr", "once_cell", "pin-utils", "slab", "wasm-bindgen-futures", "futures-channel", "async-channel", "async-lock"]
++std = ["alloc", "crossbeam-utils", "futures-core/std", "futures-io", "memchr", "once_cell", "pin-utils", "slab", "async-channel", "async-lock"]
+ tokio02 = ["async-global-executor/tokio02"]
+-tokio03 = ["async-global-executor/tokio03"]
+ tokio1 = ["async-global-executor/tokio"]
+ unstable = ["std", "async-io", "async-process"]
+ [target."cfg(not(target_os = \"unknown\"))".dependencies.async-global-executor]
+@@ -140,21 +139,3 @@
+ [target."cfg(not(target_os = \"unknown\"))".dependencies.futures-lite]
+ version = "1.0.0"
+ optional = true
+-[target."cfg(target_arch = \"wasm32\")".dependencies.futures-channel]
+-version = "0.3.4"
+-optional = true
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.gloo-timers]
+-version = "0.2.1"
+-features = ["futures"]
+-optional = true
+-
+-[target."cfg(target_arch = \"wasm32\")".dependencies.wasm-bindgen-futures]
+-version = "0.4.10"
+-optional = true
+-[target."cfg(target_arch = \"wasm32\")".dev-dependencies.getrandom]
+-version = "0.2.0"
+-features = ["js"]
+-
+-[target."cfg(target_arch = \"wasm32\")".dev-dependencies.wasm-bindgen-test]
+-version = "0.3.10"
