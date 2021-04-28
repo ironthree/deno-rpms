@@ -13,6 +13,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `ast_node`:
   - missing LICENSE files
   - bump darling from 0.10 to 0.12
+- `async-mutex`:
+  - missing LICENSE files
 - `async-stream`:
   - enable tests after updating tokio-test to ^0.4
 - `console_error_panic_hook`:
@@ -169,13 +171,12 @@ deno
   | → deno_runtime
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
-    | → notify ^5.0.0-pre.7
     | → sys-info ^0.8.0
   | → lspower
     | → async-tungstenite
+      | → async-std
     | → auto_impl
     | → ws_stream_tungstenite
-  | → notify ^5.0.0~pre.6
   | → trust-dns-client
   | → trust-dns-server
 ```
