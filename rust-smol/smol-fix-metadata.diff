@@ -1,0 +1,8 @@
+--- smol-1.2.5/Cargo.toml	2020-11-28T20:46:11+00:00
++++ smol-1.2.5/Cargo.toml	2021-04-28T23:10:19.586408+00:00
+@@ -136,5 +136,3 @@
+ 
+ [target."cfg(target_os = \"linux\")".dev-dependencies.timerfd]
+ version = "1.1.1"
+-[target."cfg(windows)".dev-dependencies.uds_windows]
+-version = "0.1.5"
