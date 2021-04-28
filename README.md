@@ -168,19 +168,13 @@ deno
     | → deno_websocket
       | → tokio-tungstenite/rustls-tls ^0.14
     | → notify ^5.0.0-pre.7
-    | → ring ^0.16.20
     | → sys-info ^0.8.0
   | → lspower
     | → async-tungstenite
     | → auto_impl
     | → lspower-macros
-    | → lsp-types
-    | → tower-test ^0.4.0
     | → ws_stream_tungstenite
   | → notify ^5.0.0~pre.6
-  | → ring ^0.16.20
-  | → rustyline ^8.0.0
-  | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
 ```
