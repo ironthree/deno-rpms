@@ -98,6 +98,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_atoms`:
   - missing LICENSE files
+- `swc_bundler`:
+  - missing LICENSE files
 - `swc_common`:
   - missing LICENSE files
   - bump parking_lot from 0.7.1 to 0.11
@@ -179,7 +181,6 @@ deno
   | → ring ^0.16.20
   | → rustyline ^8.0.0
   | → rustyline_derive ^0.4.0
-  | → swc_bundler
   | → tower-test ^0.4.0
   | → trust-dns-client
   | → trust-dns-server
