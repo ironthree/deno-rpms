@@ -5,7 +5,7 @@
 %global crate deno_websocket
 
 Name:           rust-%{crate}
-Version:        0.9.0
+Version:        0.10.0
 Release:        1%{?dist}
 Summary:        Implementation of WebSocket API for Deno
 
@@ -71,5 +71,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.10.0-1
+- Update to version 0.10.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.9.0-1
 - Initial package
