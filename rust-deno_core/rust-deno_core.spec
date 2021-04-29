@@ -5,7 +5,7 @@
 %global crate deno_core
 
 Name:           rust-%{crate}
-Version:        0.85.0
+Version:        0.86.0
 Release:        1%{?dist}
 Summary:        Secure JavaScript/TypeScript runtime built with V8, Rust, and Tokio
 
@@ -72,5 +72,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.86.0-1
+- Update to version 0.86.0.
+
 * Wed Apr 21 2021 Fabio Valentini <decathorpe@gmail.com> - 0.85.0-1
 - Initial package
