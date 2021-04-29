@@ -1,0 +1,11 @@
+--- deno_doc-0.3.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ deno_doc-0.3.0/Cargo.toml	2021-04-29T17:16:53.971609+00:00
+@@ -30,7 +30,7 @@
+ version = "1.4.0"
+ 
+ [dependencies.regex]
+-version = "=1.4.3"
++version = "1.4.3"
+ 
+ [dependencies.serde]
+ version = "1.0.125"

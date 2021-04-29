@@ -6,13 +6,16 @@
 
 Name:           rust-%{crate}
 Version:        0.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Doc generation for deno
 
 # Upstream license specification: MIT
 License:        MIT
 URL:            https://crates.io/crates/deno_doc
 Source:         %{crates_source}
+# Initial patched metadata
+# * relax regex dependency
+Patch0:         deno_doc-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -71,5 +74,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.3.0-2
+- Relax regex dependency.
+
 * Thu Apr 22 2021 Fabio Valentini <decathorpe@gmail.com> - 0.3.0-1
 - Initial package
