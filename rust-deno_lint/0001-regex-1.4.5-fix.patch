@@ -1,0 +1,13 @@
+diff --git a/src/rules/no_irregular_whitespace.rs b/src/rules/no_irregular_whitespace.rs
+index a15004c..92fd898 100644
+--- a/src/rules/no_irregular_whitespace.rs
++++ b/src/rules/no_irregular_whitespace.rs
+@@ -96,7 +96,7 @@ impl LintRule for NoIrregularWhitespace {
+             }
+           }
+         }
+-      }
++      };
+     }
+   }
+ 

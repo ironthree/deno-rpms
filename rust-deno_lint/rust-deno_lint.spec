@@ -9,7 +9,7 @@
 
 Name:           rust-%{crate}
 Version:        0.4.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Lint for deno
 
 # Upstream license specification: MIT
@@ -17,8 +17,10 @@ License:        MIT
 URL:            https://crates.io/crates/deno_lint
 Source:         %{crates_source}
 # Initial patched metadata
-# * bump deno_core from 0.84 to 0.85 (FIXME)
+# * bump deno_core from 0.84 to 0.86 (FIXME)
+# * relax regex dependency
 Patch0:         deno_lint-fix-metadata.diff
+Patch1:         0001-regex-1.4.5-fix.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -77,5 +79,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.0-2
+- Relax regex dependency. Bump deno_core dependency to 0.86.0.
+
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.0-1
 - Initial package
