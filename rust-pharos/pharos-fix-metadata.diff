@@ -1,0 +1,19 @@
+--- pharos-0.5.1/Cargo.toml	2021-02-18T13:04:12+00:00
++++ pharos-0.5.1/Cargo.toml	2021-04-29T00:20:24.517087+00:00
+@@ -30,7 +30,6 @@
+ codegen-units = 1
+ [dependencies.futures]
+ version = "^0.3"
+-default-features = false
+ [dev-dependencies.assert_matches]
+ version = "^1"
+ 
+@@ -48,7 +47,7 @@
+ [dev-dependencies.wasm-bindgen-test]
+ version = "^0.3"
+ [build-dependencies.rustc_version]
+-version = "^0.2"
++version = "^0.3"
+ [badges.maintenance]
+ status = "actively-developed"
+ 
