@@ -19,6 +19,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - enable tests after updating tokio-test to ^0.4
 - `console_error_panic_hook`:
   - missing LICENSE files
+- `deno`:
+  - missing LICENSE file
 - `deno_console`:
   - missing LICENSE file
 - `deno_core`:
@@ -165,17 +167,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `wgpu-types`:
   - missing LICENSE file
-
-## Dependency graph (TODO only)
-
-- crates without version: not packaged as RPMs yet (neither Fedora nor COPR)
-- crates with version: version in Fedora is either too old or too new
-- crates that are packaged for Fedora or in this repo + COPR are not listed
-
-```
-deno
-  | → trust-dns-server
-```
 
 ## Pending package changes in Fedora
 
