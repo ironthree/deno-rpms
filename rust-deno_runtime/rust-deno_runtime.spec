@@ -5,12 +5,12 @@
 %global crate deno_runtime
 
 Name:           rust-%{crate}
-Version:        0.12.0
+Version:        0.13.0
 Release:        1%{?dist}
 Summary:        Provides the deno runtime library
 
 # Upstream license specification: MIT
-# FIXME: missing license file
+# FIXME: missing LICENSE file
 License:        MIT
 URL:            https://crates.io/crates/deno_runtime
 Source:         %{crates_source}
@@ -75,5 +75,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.13.0-1
+- Update to version 0.13.0.
+
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.12.0-1
 - Initial package
