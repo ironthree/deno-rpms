@@ -33,6 +33,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `deno_lint`:
   - bump deno_core from 0.84 to 0.85
   - shebang mangling of executable typescript files broken
+- `deno_runtime`:
+  - missing LICENSE file
 - `deno_timers`:
   - missing LICENSE file
 - `deno_url`:
