@@ -1,0 +1,7 @@
+--- async-native-tls-0.3.3/Cargo.toml	2020-03-09T10:39:23+00:00
++++ async-native-tls-0.3.3/Cargo.toml	2021-04-29T00:24:18.196466+00:00
+@@ -79,4 +79,3 @@
+ default = ["runtime-async-std"]
+ runtime-async-std = ["async-std"]
+ runtime-tokio = ["tokio"]
+-vendored = ["native-tls/vendored"]
