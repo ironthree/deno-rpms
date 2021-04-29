@@ -5,7 +5,7 @@
 %global crate deno_web
 
 Name:           rust-%{crate}
-Version:        0.34.0
+Version:        0.35.0
 Release:        1%{?dist}
 Summary:        Collection of Web APIs
 
@@ -71,5 +71,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.35.0-1
+- Update to version 0.35.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.34.0-1
 - Initial package
