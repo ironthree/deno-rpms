@@ -43,6 +43,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE file
 - `deno_webidl`:
   - missing LICENSE file
+- `deno_websocket`:
+  - missing LICENSE file
 - `dprint-plugin-typescript`:
   - bump dprint-swc-ecma-ast-view from 0.15 to 0.16
 - `dprint-swc-ecma-ast-view`:
@@ -169,7 +171,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 ```
 deno
   | → deno_runtime
-    | → deno_websocket
   | → trust-dns-client
   | → trust-dns-server
 ```
