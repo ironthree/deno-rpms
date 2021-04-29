@@ -6,12 +6,12 @@
 %global crate swc_bundler
 
 Name:           rust-%{crate}
-Version:        0.32.5
+Version:        0.32.8
 Release:        1%{?dist}
 Summary:        Very fast ecmascript bundler
 
 # Upstream license specification: Apache-2.0/MIT
-# FIXME: missing license files
+# FIXME: missing LICENSE files
 License:        ASL 2.0 or MIT
 URL:            https://crates.io/crates/swc_bundler
 Source:         %{crates_source}
@@ -107,5 +107,8 @@ which use "rayon" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.32.8-1
+- Update to version 0.32.8.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.32.5-1
 - Initial package
