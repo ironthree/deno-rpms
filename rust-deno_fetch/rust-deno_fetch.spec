@@ -5,12 +5,12 @@
 %global crate deno_fetch
 
 Name:           rust-%{crate}
-Version:        0.26.0
+Version:        0.27.0
 Release:        1%{?dist}
 Summary:        Fetch API implementation for Deno
 
 # Upstream license specification: MIT
-# FIXME: missing license file
+# FIXME: missing LICENSE file
 License:        MIT
 URL:            https://crates.io/crates/deno_fetch
 Source:         %{crates_source}
@@ -71,5 +71,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.27.0-1
+- Update to version 0.27.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.26.0-1
 - Initial package
