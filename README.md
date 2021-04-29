@@ -172,8 +172,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 
 ```
 deno
-  | → deno_runtime
-  | → trust-dns-client
   | → trust-dns-server
 ```
 
