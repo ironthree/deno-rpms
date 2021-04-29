@@ -6,7 +6,7 @@
 %global crate deno
 
 Name:           rust-%{crate}
-Version:        1.9.1
+Version:        1.9.2
 Release:        1%{?dist}
 Summary:        Provides the deno executable
 
@@ -36,8 +36,8 @@ Summary:        %{summary}
 
 %files       -n %{crate}
 %doc README.md
-%{_bindir}/denort
 %{_bindir}/deno
+%{_bindir}/denort
 
 %prep
 %autosetup -n %{crate}-%{version_no_tilde} -p1
@@ -58,5 +58,8 @@ Summary:        %{summary}
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 1.9.2-1
+- Update to version 1.9.2.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 1.9.1-1
 - Initial package

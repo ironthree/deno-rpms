@@ -1,5 +1,5 @@
---- deno-1.9.1/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ deno-1.9.1/Cargo.toml	2021-04-22T22:35:26.805187+00:00
+--- deno-1.9.2/Cargo.toml	1970-01-01T00:00:00+00:00
++++ deno-1.9.2/Cargo.toml	2021-04-29T12:23:46.832762+00:00
 @@ -208,14 +208,3 @@
  
  [target."cfg(unix)".dev-dependencies.nix]
