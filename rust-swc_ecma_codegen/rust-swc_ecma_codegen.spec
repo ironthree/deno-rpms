@@ -6,12 +6,12 @@
 %global crate swc_ecma_codegen
 
 Name:           rust-%{crate}
-Version:        0.52.3
+Version:        0.52.4
 Release:        1%{?dist}
 Summary:        Ecmascript code generator for the swc project
 
 # Upstream license specification: Apache-2.0/MIT
-# FIXME: missing license files
+# FIXME: missing LICENSE files
 License:        ASL 2.0 or MIT
 URL:            https://crates.io/crates/swc_ecma_codegen
 Source:         %{crates_source}
@@ -71,5 +71,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.52.4-1
+- Update to version 0.52.4.
+
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.52.3-1
 - Initial package
