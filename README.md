@@ -170,12 +170,7 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 deno
   | → deno_runtime
     | → deno_websocket
-      | → tokio-tungstenite/rustls-tls ^0.14
-    | → sys-info ^0.8.0
   | → lspower
-    | → async-tungstenite
-    | → auto_impl
-    | → ws_stream_tungstenite
   | → trust-dns-client
   | → trust-dns-server
 ```
