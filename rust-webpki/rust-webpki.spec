@@ -18,7 +18,8 @@ License:        ISC
 URL:            https://crates.io/crates/webpki
 Source:         %{crates_source}
 # Initial patched metadata
-# * bump base64 from 0.9 to 0.13 (FIXME)
+# * bump base64 from 0.9 to 0.13.
+#   https://github.com/briansmith/webpki/pull/230
 Patch0:         webpki-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
@@ -104,6 +105,7 @@ which use "trust_anchor_util" feature of "%{crate}" crate.
 %check
 %ifarch aarch64
 # some doctests fail to compile on aarch64
+# https://bugzilla.redhat.com/show_bug.cgi?id=1902663
 %cargo_test -- --lib
 %else
 %cargo_test
@@ -111,5 +113,5 @@ which use "trust_anchor_util" feature of "%{crate}" crate.
 %endif
 
 %changelog
-* Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.21.4-1
+* Sun May 09 2021 Fabio Valentini <decathorpe@gmail.com> - 0.21.4-1
 - Initial package
