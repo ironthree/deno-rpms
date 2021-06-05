@@ -5,7 +5,7 @@
 %global crate deno_timers
 
 Name:           rust-%{crate}
-Version:        0.3.0
+Version:        0.5.1
 Release:        1%{?dist}
 Summary:        Timers API implementation for Deno
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Jun 05 2021 Fabio Valentini <decathorpe@gmail.com> - 0.5.1-1
+- Update to version 0.5.1.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.3.0-1
 - Update to version 0.3.0.
 
