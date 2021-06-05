@@ -5,7 +5,7 @@
 %global crate deno_fetch
 
 Name:           rust-%{crate}
-Version:        0.27.0
+Version:        0.29.1
 Release:        1%{?dist}
 Summary:        Fetch API implementation for Deno
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Jun 05 2021 Fabio Valentini <decathorpe@gmail.com> - 0.29.1-1
+- Update to version 0.29.1.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.27.0-1
 - Update to version 0.27.0.
 
