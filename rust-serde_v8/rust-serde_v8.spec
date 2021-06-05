@@ -5,7 +5,7 @@
 %global crate serde_v8
 
 Name:           rust-%{crate}
-Version:        0.4.0
+Version:        0.4.1
 Release:        1%{?dist}
 Summary:        Rust to V8 serialization and deserialization
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Jun 05 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.1-1
+- Update to version 0.4.1.
+
 * Tue May 25 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.0-1
 - Update to version 0.4.0.
 
