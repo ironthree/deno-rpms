@@ -5,7 +5,7 @@
 %global crate deno_file
 
 Name:           rust-%{crate}
-Version:        0.4.0
+Version:        0.6.1
 Release:        1%{?dist}
 Summary:        File API implementation for Deno
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Jun 05 2021 Fabio Valentini <decathorpe@gmail.com> - 0.6.1-1
+- Update to version 0.6.1.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.0-1
 - Update to version 0.4.0.
 
