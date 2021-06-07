@@ -5,12 +5,12 @@
 %global crate wgpu-types
 
 Name:           rust-%{crate}
-Version:        0.7.0
+Version:        0.8.0
 Release:        1%{?dist}
 Summary:        WebGPU types
 
 # Upstream license specification: MPL-2.0
-# FIXME: missing license file
+# FIXME: missing LICENSE file
 License:        MPLv2.0
 URL:            https://crates.io/crates/wgpu-types
 Source:         %{crates_source}
@@ -106,5 +106,8 @@ which use "trace" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.8.0-1
+- Update to version 0.8.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.7.0-1
 - Initial package
