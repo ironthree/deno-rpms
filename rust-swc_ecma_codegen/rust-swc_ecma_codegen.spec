@@ -6,7 +6,7 @@
 %global crate swc_ecma_codegen
 
 Name:           rust-%{crate}
-Version:        0.52.4
+Version:        0.52.5
 Release:        1%{?dist}
 Summary:        Ecmascript code generator for the swc project
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.52.5-1
+- Update to version 0.52.5.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.52.4-1
 - Update to version 0.52.4.
 
