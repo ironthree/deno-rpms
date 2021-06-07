@@ -6,12 +6,12 @@
 %global crate swc_ecma_transforms_typescript
 
 Name:           rust-%{crate}
-Version:        0.14.4
+Version:        0.16.0
 Release:        1%{?dist}
 Summary:        Rust port of babel and closure compiler
 
 # Upstream license specification: Apache-2.0/MIT
-# FIXME: missing license files
+# FIXME: missing LICENSE files
 License:        ASL 2.0 or MIT
 URL:            https://crates.io/crates/swc_ecma_transforms_typescript
 Source:         %{crates_source}
@@ -71,5 +71,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.16.0-1
+- Update to version 0.16.0.
+
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.14.4-1
 - Initial package
