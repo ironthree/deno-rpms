@@ -1,5 +1,5 @@
---- deno_lint-0.4.0/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ deno_lint-0.4.0/Cargo.toml	2021-04-29T17:20:05.410699+00:00
+--- deno_lint-0.5.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ deno_lint-0.5.0/Cargo.toml	2021-06-07T14:38:13.385650+00:00
 @@ -44,7 +44,7 @@
  version = "1.5.2"
  
@@ -14,7 +14,7 @@
  
  [dev-dependencies.deno_core]
 -version = "0.84.0"
-+version = "0.86.0"
++version = "0.88.1"
  
  [dev-dependencies.env_logger]
  version = "0.8.3"
