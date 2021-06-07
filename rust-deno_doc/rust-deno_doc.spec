@@ -5,8 +5,8 @@
 %global crate deno_doc
 
 Name:           rust-%{crate}
-Version:        0.3.0
-Release:        2%{?dist}
+Version:        0.4.0
+Release:        1%{?dist}
 Summary:        Doc generation for deno
 
 # Upstream license specification: MIT
@@ -74,6 +74,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Jun 05 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.0-1
+- Update to version 0.4.0.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.3.0-2
 - Relax regex dependency.
 
