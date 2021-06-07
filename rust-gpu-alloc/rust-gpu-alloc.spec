@@ -5,12 +5,12 @@
 %global crate gpu-alloc
 
 Name:           rust-%{crate}
-Version:        0.3.0
+Version:        0.4.7
 Release:        1%{?dist}
 Summary:        Implementation agnostic memory allocator for Vulkan like APIs
 
 # Upstream license specification: MIT OR Apache-2.0
-# FIXME: missing license files
+# FIXME: missing LICENSE files
 License:        MIT or ASL 2.0
 URL:            https://crates.io/crates/gpu-alloc
 Source:         %{crates_source}
@@ -49,6 +49,18 @@ This package contains library source intended for building other packages
 which use "default" feature of "%{crate}" crate.
 
 %files       -n %{name}+default-devel
+%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
+
+%package     -n %{name}+freelist-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+freelist-devel %{_description}
+
+This package contains library source intended for building other packages
+which use "freelist" feature of "%{crate}" crate.
+
+%files       -n %{name}+freelist-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
 %package     -n %{name}+serde-devel
@@ -106,5 +118,8 @@ which use "tracing" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.7-1
+- Update to version 0.4.7.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.3.0-1
 - Initial package
