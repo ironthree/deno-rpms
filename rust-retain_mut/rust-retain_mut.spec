@@ -5,7 +5,7 @@
 %global crate retain_mut
 
 Name:           rust-%{crate}
-Version:        0.1.2
+Version:        0.1.3
 Release:        1%{?dist}
 Summary:        Same as retain, but gives mutable borrow to the predicate
 
@@ -72,5 +72,8 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.1.3-1
+- Update to version 0.1.3.
+
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.1.2-1
 - Initial package
