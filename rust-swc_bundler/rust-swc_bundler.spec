@@ -6,7 +6,7 @@
 %global crate swc_bundler
 
 Name:           rust-%{crate}
-Version:        0.32.8
+Version:        0.34.0
 Release:        1%{?dist}
 Summary:        Very fast ecmascript bundler
 
@@ -107,6 +107,9 @@ which use "rayon" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.34.0-1
+- Update to version 0.34.0.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.32.8-1
 - Update to version 0.32.8.
 
