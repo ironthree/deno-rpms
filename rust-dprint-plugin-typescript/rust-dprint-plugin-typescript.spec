@@ -5,7 +5,7 @@
 %global crate dprint-plugin-typescript
 
 Name:           rust-%{crate}
-Version:        0.44.0
+Version:        0.45.0
 Release:        1%{?dist}
 Summary:        TypeScript and JavaScript code formatter
 
@@ -13,9 +13,6 @@ Summary:        TypeScript and JavaScript code formatter
 License:        MIT
 URL:            https://crates.io/crates/dprint-plugin-typescript
 Source:         %{crates_source}
-# Initial patched metadata
-# * bump dprint-swc-ecma-ast-view from 0.15 to 0.16 (FIXME)
-Patch0:         dprint-plugin-typescript-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -67,6 +64,18 @@ which use "serde_json" feature of "%{crate}" crate.
 %files       -n %{name}+serde_json-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
+%package     -n %{name}+tracing-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+tracing-devel %{_description}
+
+This package contains library source intended for building other packages
+which use "tracing" feature of "%{crate}" crate.
+
+%files       -n %{name}+tracing-devel
+%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
+
 %package     -n %{name}+wasm-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -98,5 +107,8 @@ which use "wasm" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.45.0-1
+- Update to version 0.45.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.44.0-1
 - Initial package
