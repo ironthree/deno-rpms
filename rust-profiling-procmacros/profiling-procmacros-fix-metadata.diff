@@ -1,0 +1,11 @@
+--- profiling-procmacros-1.0.1/Cargo.toml	1970-01-01T00:00:00+00:00
++++ profiling-procmacros-1.0.1/Cargo.toml	2021-06-07T12:13:07.909092+00:00
+@@ -34,8 +34,4 @@
+ features = ["full"]
+ 
+ [features]
+-profile-with-optick = []
+-profile-with-puffin = []
+-profile-with-superluminal = []
+ profile-with-tracing = []
+-profile-with-tracy = []
