@@ -6,7 +6,7 @@
 %global crate khronos-egl
 
 Name:           rust-%{crate}
-Version:        3.0.2
+Version:        4.1.0
 Release:        1%{?dist}
 Summary:        Rust bindings for EGL
 
@@ -149,16 +149,16 @@ which use "libloading" feature of "%{crate}" crate.
 %files       -n %{name}+libloading-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
-%package     -n %{name}+nightly-devel
+%package     -n %{name}+no-pkg-config-devel
 Summary:        %{summary}
 BuildArch:      noarch
 
-%description -n %{name}+nightly-devel %{_description}
+%description -n %{name}+no-pkg-config-devel %{_description}
 
 This package contains library source intended for building other packages
-which use "nightly" feature of "%{crate}" crate.
+which use "no-pkg-config" feature of "%{crate}" crate.
 
-%files       -n %{name}+nightly-devel
+%files       -n %{name}+no-pkg-config-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
 %package     -n %{name}+pkg-config-devel
@@ -204,5 +204,8 @@ which use "static" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 4.1.0-1
+- Update to version 4.1.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 3.0.2-1
 - Initial package
