@@ -5,7 +5,7 @@
 %global crate deno_runtime
 
 Name:           rust-%{crate}
-Version:        0.13.0
+Version:        0.15.1
 Release:        1%{?dist}
 Summary:        Provides the deno runtime library
 
@@ -75,6 +75,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.15.1-1
+- Update to version 0.15.1.
+
 * Thu Apr 29 2021 Fabio Valentini <decathorpe@gmail.com> - 0.13.0-1
 - Update to version 0.13.0.
 
