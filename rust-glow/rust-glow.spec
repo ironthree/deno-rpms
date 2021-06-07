@@ -5,7 +5,7 @@
 %global crate glow
 
 Name:           rust-%{crate}
-Version:        0.7.2
+Version:        0.9.0
 Release:        1%{?dist}
 Summary:        GL on Whatever
 
@@ -14,9 +14,7 @@ License:        MIT or ASL 2.0
 URL:            https://crates.io/crates/glow
 Source:         %{crates_source}
 # Initial patched metadata
-# * drop windows- and WASM-specific dependencies and features
-# * drop unused SDL2 backend
-# * bump glutin from 0.24 to 0.26 (FIXME)
+# * drop WASM-specific dependencies
 Patch0:         glow-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
@@ -58,18 +56,6 @@ which use "default" feature of "%{crate}" crate.
 %files       -n %{name}+default-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
-%package     -n %{name}+glutin-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+glutin-devel %{_description}
-
-This package contains library source intended for building other packages
-which use "glutin" feature of "%{crate}" crate.
-
-%files       -n %{name}+glutin-devel
-%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
-
 %prep
 %autosetup -n %{crate}-%{version_no_tilde} -p1
 %cargo_prep
@@ -89,5 +75,8 @@ which use "glutin" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.9.0-1
+- Update to version 0.9.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.7.2-1
 - Initial package
