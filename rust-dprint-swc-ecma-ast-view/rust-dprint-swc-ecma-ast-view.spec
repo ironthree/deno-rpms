@@ -5,12 +5,12 @@
 %global crate dprint-swc-ecma-ast-view
 
 Name:           rust-%{crate}
-Version:        0.16.0
+Version:        0.19.0
 Release:        1%{?dist}
 Summary:        View of the swc AST that's easier to navigate
 
 # Upstream license specification: MIT
-# FIXME: missing license file
+# FIXME: missing LICENSE file
 License:        MIT
 URL:            https://crates.io/crates/dprint-swc-ecma-ast-view
 Source:         %{crates_source}
@@ -94,5 +94,8 @@ which use "serialize" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.19.0-1
+- Update to version 0.19.0.
+
 * Tue Apr 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.16.0-1
 - Initial package
