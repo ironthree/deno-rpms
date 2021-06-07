@@ -5,12 +5,12 @@
 %global crate gfx-backend-gl
 
 Name:           rust-%{crate}
-Version:        0.7.1
+Version:        0.8.1
 Release:        1%{?dist}
 Summary:        OpenGL backend for gfx-rs
 
 # Upstream license specification: MIT OR Apache-2.0
-# FIXME: missing license files
+# FIXME: missing LICENSE files
 License:        MIT or ASL 2.0
 URL:            https://crates.io/crates/gfx-backend-gl
 Source:         %{crates_source}
@@ -55,16 +55,40 @@ which use "default" feature of "%{crate}" crate.
 %files       -n %{name}+default-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
-%package     -n %{name}+naga-devel
+%package     -n %{name}+auxil-devel
 Summary:        %{summary}
 BuildArch:      noarch
 
-%description -n %{name}+naga-devel %{_description}
+%description -n %{name}+auxil-devel %{_description}
 
 This package contains library source intended for building other packages
-which use "naga" feature of "%{crate}" crate.
+which use "auxil" feature of "%{crate}" crate.
 
-%files       -n %{name}+naga-devel
+%files       -n %{name}+auxil-devel
+%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
+
+%package     -n %{name}+cross-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+cross-devel %{_description}
+
+This package contains library source intended for building other packages
+which use "cross" feature of "%{crate}" crate.
+
+%files       -n %{name}+cross-devel
+%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
+
+%package     -n %{name}+spirv_cross-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+spirv_cross-devel %{_description}
+
+This package contains library source intended for building other packages
+which use "spirv_cross" feature of "%{crate}" crate.
+
+%files       -n %{name}+spirv_cross-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
 %prep
@@ -86,5 +110,8 @@ which use "naga" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.8.1-1
+- Update to version 0.8.1.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.7.1-1
 - Initial package
