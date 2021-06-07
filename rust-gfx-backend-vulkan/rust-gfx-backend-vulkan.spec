@@ -5,7 +5,7 @@
 %global crate gfx-backend-vulkan
 
 Name:           rust-%{crate}
-Version:        0.7.0
+Version:        0.8.0
 Release:        1%{?dist}
 Summary:        Vulkan API backend for gfx-rs
 
@@ -55,6 +55,18 @@ which use "default" feature of "%{crate}" crate.
 %files       -n %{name}+default-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
+%package     -n %{name}+libc-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+libc-devel %{_description}
+
+This package contains library source intended for building other packages
+which use "libc" feature of "%{crate}" crate.
+
+%files       -n %{name}+libc-devel
+%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
+
 %package     -n %{name}+naga-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -65,18 +77,6 @@ This package contains library source intended for building other packages
 which use "naga" feature of "%{crate}" crate.
 
 %files       -n %{name}+naga-devel
-%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
-
-%package     -n %{name}+shared_library-devel
-Summary:        %{summary}
-BuildArch:      noarch
-
-%description -n %{name}+shared_library-devel %{_description}
-
-This package contains library source intended for building other packages
-which use "shared_library" feature of "%{crate}" crate.
-
-%files       -n %{name}+shared_library-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
 %package     -n %{name}+use-rtld-next-devel
@@ -110,5 +110,8 @@ which use "use-rtld-next" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Jun 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.8.0-1
+- Update to version 0.8.0.
+
 * Fri Apr 23 2021 Fabio Valentini <decathorpe@gmail.com> - 0.7.0-1
 - Initial package
