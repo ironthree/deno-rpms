@@ -5,7 +5,7 @@
 %global crate rusty_v8
 
 Name:           rust-%{crate}
-Version:        0.22.2
+Version:        0.22.3
 Release:        1%{?dist}
 Summary:        Rust bindings to V8
 
@@ -68,7 +68,7 @@ Summary:        %{summary}
 # vtune                 BSD or GPLv2
 License:        BSD and zlib and MIT and ASL 2.0 and CC0
 
-Provides:       bundled(v8) = 9.1.269.27
+Provides:       bundled(v8) = 9.1.269.35
 
 # https://github.com/denoland/rusty_v8/tree/v0.22.1/third_party
 # https://github.com/denoland/icu/tree/28b0e9e
@@ -81,12 +81,12 @@ Provides:       bundled(zlib) = e84c9a3
 Provides:       bundled(libc++) = 8fa8794
 Provides:       bundled(libc++abi) = 196ba1a
 
-# https://chromium.googlesource.com/v8/v8/+/87c760/third_party/
+# https://chromium.googlesource.com/v8/v8/+/399148/third_party/
 Provides:       bundled(inspector_protocol)
 # https://github.com/WebAssembly/wasm-c-api/tree/6db391e
 Provides:       bundled(wasm-api) = 6db391e
 
-# https://chromium.googlesource.com/v8/v8/+/87c760/src/third_party/
+# https://chromium.googlesource.com/v8/v8/+/399148/src/third_party/
 Provides:       bundled(siphash)
 Provides:       bundled(utf8-decoder)
 
@@ -165,6 +165,9 @@ cp -pav target/release/gn_out/obj/lib%{crate}.a \
 %endif
 
 %changelog
+* Sun Jun 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.22.3-1
+- Update to version 0.22.3.
+
 * Tue May 25 2021 Fabio Valentini <decathorpe@gmail.com> - 0.22.2-1
 - Update to version 0.22.2.
 
