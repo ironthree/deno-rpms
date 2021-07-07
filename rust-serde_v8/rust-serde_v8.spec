@@ -5,12 +5,11 @@
 %global crate serde_v8
 
 Name:           rust-%{crate}
-Version:        0.4.1
+Version:        0.8.0
 Release:        1%{?dist}
 Summary:        Rust to V8 serialization and deserialization
 
 # Upstream license specification: MIT
-# FIXME: missing license file
 License:        MIT
 URL:            https://crates.io/crates/serde_v8
 Source:         %{crates_source}
@@ -37,6 +36,7 @@ This package contains library source intended for building other packages
 which use "%{crate}" crate.
 
 %files          devel
+%license LICENSE.md
 %doc README.md
 %{cargo_registry}/%{crate}-%{version_no_tilde}/
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Wed Jul 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.8.0-1
+- Update to version 0.8.0.
+
 * Sat Jun 05 2021 Fabio Valentini <decathorpe@gmail.com> - 0.4.1-1
 - Update to version 0.4.1.
 
