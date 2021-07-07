@@ -13,12 +13,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `ast_node`:
   - missing LICENSE files
   - bump darling from 0.10 to 0.12
-- `async-mutex`:
-  - missing LICENSE files
-- `async-stream`:
-  - enable tests after updating tokio-test to ^0.4
-- `console_error_panic_hook`:
-  - missing LICENSE files
 - `deno`:
   - missing LICENSE file
 - `deno_console`:
@@ -77,8 +71,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `gpu-descriptor-types`:
   - missing LICENSE files
-- `Inflector`:
-  - missing LICENSE file
 - `is-macro`:
   - missing LICENSE file
   - fix typos in description
@@ -88,15 +80,8 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `pomelo-impl`:
   - missing LICENSE files
-- `rustls`:
-  - missing LICENSE files
-  - two failing tests
-- `rustls-native-certs`:
-  - exclude upstream-only CI files
 - `rusty_v8`:
   - missing LICENSE files
-- `serde_v8`:
-  - missing LICENSE file
 - `sourcemap`:
   - bump rustc_version from 0.2.3 to 0.3
 - `spirv_cross`:
@@ -105,8 +90,6 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
 - `spirv_headers`:
   - missing LICENSE file
 - `string_enum`:
-  - missing LICENSE files
-- `sval_json`:
   - missing LICENSE files
 - `swc_atoms`:
   - missing LICENSE files
@@ -159,19 +142,10 @@ Builds are available on COPR: <https://copr.fedorainfracloud.org/coprs/decathorp
   - missing LICENSE files
 - `swc_visit_macros`:
   - missing LICENSE files
-- `value-bag`:
-  - one failing memory layout test on aarch64
-- `webpki`:
-  - bump base64 from 0.9 to 0.13
 - `wgpu-core`:
   - missing LICENSE file
 - `wgpu-types`:
   - missing LICENSE file
-
-## Pending package changes in Fedora
-
-- enable Rustls features in `reqwest`
-- enable Rustls features in `trust-dns-*`
 
 ## License
 
