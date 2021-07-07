@@ -5,7 +5,7 @@
 %global crate rusty_v8
 
 Name:           rust-%{crate}
-Version:        0.22.3
+Version:        0.25.1
 Release:        1%{?dist}
 Summary:        Rust bindings to V8
 
@@ -16,11 +16,14 @@ URL:            https://crates.io/crates/rusty_v8
 Source:         %{crates_source}
 # Initial patched metadata
 # * drop unused fslock build-dependency
+# * drop unused align-data and trybuild dev-dependencies
 Patch0:         rusty_v8-fix-metadata.diff
 # build system adaptations
 # * build using system clang
 # * build bundled v8 from source
 Patch1:         0001-use-system-clang-and-build-v8-from-source-once.patch
+# patch for python 3.10 compatibility
+Patch2:         0002-fix-deprecated-python-collections-import.patch
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -68,25 +71,24 @@ Summary:        %{summary}
 # vtune                 BSD or GPLv2
 License:        BSD and zlib and MIT and ASL 2.0 and CC0
 
-Provides:       bundled(v8) = 9.1.269.35
+Provides:       bundled(v8) = 9.2.230.12
 
-# https://github.com/denoland/rusty_v8/tree/v0.22.1/third_party
-# https://github.com/denoland/icu/tree/28b0e9e
-Provides:       bundled(icu) = 28b0e9e
+# https://github.com/denoland/rusty_v8/tree/v0.25.1/third_party
+# https://github.com/denoland/icu/tree/f022e29
+Provides:       bundled(icu) = 69
 Provides:       bundled(jinja2) = 2.10
 Provides:       bundled(markupsafe) = 0.18
 Provides:       bundled(zlib) = e84c9a3
 
-# https://github.com/denoland/chromium_buildtools/tree/ccba851/third_party
+# https://github.com/denoland/chromium_buildtools/tree/3655cd6/third_party
 Provides:       bundled(libc++) = 8fa8794
-Provides:       bundled(libc++abi) = 196ba1a
+Provides:       bundled(libc++abi) = 767de31
 
-# https://chromium.googlesource.com/v8/v8/+/399148/third_party/
-Provides:       bundled(inspector_protocol)
-# https://github.com/WebAssembly/wasm-c-api/tree/6db391e
+# https://github.com/denoland/v8/tree/d0c2145/third_party/
+Provides:       bundled(inspector_protocol) = 35e8d2d
 Provides:       bundled(wasm-api) = 6db391e
 
-# https://chromium.googlesource.com/v8/v8/+/399148/src/third_party/
+# https://github.com/denoland/v8/tree/d0c2145/src/third_party/
 Provides:       bundled(siphash)
 Provides:       bundled(utf8-decoder)
 
@@ -165,6 +167,9 @@ cp -pav target/release/gn_out/obj/lib%{crate}.a \
 %endif
 
 %changelog
+* Wed Jul 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.25.1-1
+- Update to version 0.25.1.
+
 * Sun Jun 20 2021 Fabio Valentini <decathorpe@gmail.com> - 0.22.3-1
 - Update to version 0.22.3.
 
