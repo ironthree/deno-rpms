@@ -1,14 +1,6 @@
---- gfx-backend-gl-0.8.1/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ gfx-backend-gl-0.8.1/Cargo.toml	2021-06-07T10:33:33.332308+00:00
-@@ -68,6 +68,7 @@
- [features]
- cross = ["spirv_cross", "auxil", "naga/spv-out"]
- default = []
-+
- [target."cfg(not(target_arch = \"wasm32\"))".dependencies.egl]
- version = "4.1"
- features = ["dynamic"]
-@@ -75,12 +76,3 @@
+--- gfx-backend-gl-0.9.0/Cargo.toml	1970-01-01T00:00:00+00:00
++++ gfx-backend-gl-0.9.0/Cargo.toml	2021-09-06T23:01:26.674686+00:00
+@@ -75,12 +75,3 @@
  
  [target."cfg(not(target_arch = \"wasm32\"))".dependencies.libloading]
  version = "0.7"
