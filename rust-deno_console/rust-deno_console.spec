@@ -5,7 +5,7 @@
 %global crate deno_console
 
 Name:           rust-%{crate}
-Version:        0.11.0
+Version:        0.16.0
 Release:        1%{?dist}
 Summary:        Implementation of Console API for Deno
 
@@ -71,6 +71,9 @@ which use "default" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Mon Sep 06 2021 Fabio Valentini <decathorpe@gmail.com> - 0.16.0-1
+- Update to version 0.16.0.
+
 * Wed Jul 14 2021 Fabio Valentini <decathorpe@gmail.com> - 0.11.0-1
 - Update to version 0.11.0.
 
