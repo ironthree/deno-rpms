@@ -1,0 +1,72 @@
+running 17 tests
+test src/high/call.rs - high::call (line 8) ... FAILED
+test src/high/call.rs - high::call::call (line 65) ... FAILED
+test src/high/call.rs - ffi_call (line 93) ... FAILED
+test src/high/mod.rs - high (line 35) ... FAILED
+test src/low.rs - low::closure_alloc (line 364) ... ok
+test src/low.rs - low::call (line 319) ... ok
+test src/lib.rs - (line 72) ... FAILED
+test src/low.rs - low::closure_free (line 388) ... ok
+test src/high/mod.rs - high (line 55) ... FAILED
+test src/low.rs - low::prep_cif (line 233) ... FAILED
+test src/low.rs - low::type_tag (line 176) ... ok
+test src/low.rs - low::prep_closure (line 463) ... FAILED
+test src/low.rs - low::prep_closure_mut (line 555) ... FAILED
+test src/middle/builder.rs - middle::builder::Builder (line 23) ... FAILED
+test src/middle/mod.rs - middle::Cif (line 70) ... FAILED
+test src/middle/types.rs - middle::types::Type (line 45) ... ok
+test src/middle/mod.rs - middle::Closure (line 201) ... FAILED
+failures:
+---- src/high/call.rs - high::call (line 8) stdout ----
+Test executable failed (exit code 101).
+stderr:
+thread 'main' panicked at 'assertion failed: (result - 5f32).abs() < 0.0001', src/high/call.rs:12:1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+---- src/high/call.rs - high::call::call (line 65) stdout ----
+Test executable failed (exit code 101).
+stderr:
+thread 'main' panicked at 'assertion failed: (result - 5f32).abs() < 0.0001', src/high/call.rs:14:1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+---- src/high/call.rs - ffi_call (line 93) stdout ----
+Test executable failed (exit code 101).
+stderr:
+thread 'main' panicked at 'assertion failed: (result - 5f32).abs() < 0.0001', src/high/call.rs:12:1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+---- src/high/mod.rs - high (line 35) stdout ----
+Test executable failed (terminated by signal).
+---- src/lib.rs - (line 72) stdout ----
+Test executable failed (terminated by signal).
+---- src/high/mod.rs - high (line 55) stdout ----
+Test executable failed (terminated by signal).
+---- src/low.rs - low::prep_cif (line 233) stdout ----
+Test executable failed (terminated by signal).
+---- src/low.rs - low::prep_closure (line 463) stdout ----
+Test executable failed (terminated by signal).
+---- src/low.rs - low::prep_closure_mut (line 555) stdout ----
+Test executable failed (terminated by signal).
+---- src/middle/builder.rs - middle::builder::Builder (line 23) stdout ----
+Test executable failed (terminated by signal).
+---- src/middle/mod.rs - middle::Cif (line 70) stdout ----
+Test executable failed (exit code 101).
+stderr:
+thread 'main' panicked at 'assertion failed: `(left == right)`
+  left: `11.0`,
+ right: `5.0`', src/middle/mod.rs:14:1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+---- src/middle/mod.rs - middle::Closure (line 201) stdout ----
+Test executable failed (terminated by signal).
+failures:
+    src/high/call.rs - ffi_call (line 93)
+    src/high/call.rs - high::call (line 8)
+    src/high/call.rs - high::call::call (line 65)
+    src/high/mod.rs - high (line 35)
+    src/high/mod.rs - high (line 55)
+    src/lib.rs - (line 72)
+    src/low.rs - low::prep_cif (line 233)
+    src/low.rs - low::prep_closure (line 463)
+    src/low.rs - low::prep_closure_mut (line 555)
+    src/middle/builder.rs - middle::builder::Builder (line 23)
+    src/middle/mod.rs - middle::Cif (line 70)
+    src/middle/mod.rs - middle::Closure (line 201)
+test result: FAILED. 5 passed; 12 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.93s
+error: test failed, to rerun pass '--doc'
