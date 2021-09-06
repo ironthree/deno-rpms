@@ -5,7 +5,7 @@
 %global crate rusty_v8
 
 Name:           rust-%{crate}
-Version:        0.25.3
+Version:        0.27.0
 Release:        1%{?dist}
 Summary:        Rust bindings to V8
 
@@ -63,7 +63,7 @@ Summary:        %{summary}
 # jinja2                BSD
 # markupsafe            BSD
 # zlib                  zlib
-# inspector_protocol    MIT
+# inspector_protocol    BSD
 # wasm-api              ASL 2.0
 # siphash               CC0
 # utf8-decoder          MIT
@@ -71,9 +71,9 @@ Summary:        %{summary}
 # vtune                 BSD or GPLv2
 License:        BSD and zlib and MIT and ASL 2.0 and CC0
 
-Provides:       bundled(v8) = 9.2.230.14
+Provides:       bundled(v8) = 9.4.146.10
 
-# https://github.com/denoland/rusty_v8/tree/v0.25.3/third_party
+# https://github.com/denoland/rusty_v8/tree/v0.27.0/third_party
 # https://github.com/denoland/icu/tree/f022e29
 Provides:       bundled(icu) = 69
 Provides:       bundled(jinja2) = 2.10
@@ -84,11 +84,11 @@ Provides:       bundled(zlib) = e84c9a3
 Provides:       bundled(libc++) = 8fa8794
 Provides:       bundled(libc++abi) = 767de31
 
-# https://github.com/denoland/v8/tree/2afd79e/third_party/
-Provides:       bundled(inspector_protocol) = 35e8d2d
+# https://github.com/denoland/v8/tree/0f81063/third_party/
+Provides:       bundled(inspector_protocol) = 32cf5f2
 Provides:       bundled(wasm-api) = 6db391e
 
-# https://github.com/denoland/v8/tree/2afd79e/src/third_party/
+# https://github.com/denoland/v8/tree/0f81063/src/third_party/
 Provides:       bundled(siphash)
 Provides:       bundled(utf8-decoder)
 
@@ -167,6 +167,9 @@ cp -pav target/release/gn_out/obj/lib%{crate}.a \
 %endif
 
 %changelog
+* Mon Sep 06 2021 Fabio Valentini <decathorpe@gmail.com> - 0.27.0-1
+- Update to version 0.27.0.
+
 * Wed Jul 14 2021 Fabio Valentini <decathorpe@gmail.com> - 0.25.3-1
 - Update to version 0.25.3.
 
