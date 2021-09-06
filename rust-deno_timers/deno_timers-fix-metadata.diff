@@ -1,0 +1,11 @@
+--- deno_timers-0.14.0/Cargo.toml	1970-01-01T00:00:01+00:00
++++ deno_timers-0.14.0/Cargo.toml	2021-09-06T22:10:49.092867+00:00
+@@ -32,8 +32,6 @@
+ [dependencies.tokio]
+ version = "1.8.1"
+ features = ["full"]
+-[dev-dependencies.deno_bench_util]
+-version = "0.10.0"
+ 
+ [dev-dependencies.deno_url]
+ version = "0.16.0"
