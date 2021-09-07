@@ -1,0 +1,11 @@
+--- swc_ecma_minifier-0.18.3/Cargo.toml	1970-01-01T00:00:00+00:00
++++ swc_ecma_minifier-0.18.3/Cargo.toml	2021-09-07T12:49:17.458755+00:00
+@@ -24,7 +24,7 @@
+ version = "0.2.1"
+ 
+ [dependencies.indexmap]
+-version = "1.7.0"
++version = "1.6.2"
+ 
+ [dependencies.log]
+ version = "0.4"
