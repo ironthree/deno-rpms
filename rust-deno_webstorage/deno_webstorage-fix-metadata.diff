@@ -1,13 +1,13 @@
---- deno_webstorage-0.2.1/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ deno_webstorage-0.2.1/Cargo.toml	2021-06-07T14:22:36.697668+00:00
-@@ -26,8 +26,8 @@
- version = "0.88.1"
+--- deno_webstorage-0.11.0/Cargo.toml	1970-01-01T00:00:01+00:00
++++ deno_webstorage-0.11.0/Cargo.toml	2021-09-07T01:40:54.613709+00:00
+@@ -29,8 +29,8 @@
+ version = "0.47.0"
  
  [dependencies.rusqlite]
 -version = "0.25.3"
 -features = ["unlock_notify", "bundled"]
-+version = "0.24"
++version = "0.24.0"
 +features = ["unlock_notify"]
  
  [dependencies.serde]
- version = "1.0.125"
+ version = "1.0.126"
