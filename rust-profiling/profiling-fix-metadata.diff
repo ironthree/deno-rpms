@@ -1,5 +1,5 @@
---- profiling-1.0.1/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ profiling-1.0.1/Cargo.toml	2021-06-07T12:10:50.854267+00:00
+--- profiling-1.0.3/Cargo.toml	1970-01-01T00:00:00+00:00
++++ profiling-1.0.3/Cargo.toml	2021-09-07T16:02:44.993804+00:00
 @@ -24,37 +24,18 @@
  repository = "https://github.com/aclysma/profiling"
  
@@ -17,11 +17,11 @@
 -optional = true
  
  [dependencies.profiling-procmacros]
- version = "1.0.1"
+ version = "1.0.3"
 -optional = true
 -
 -[dependencies.puffin]
--version = "0.4"
+-version = "0.5"
 -optional = true
 -
 -[dependencies.superluminal-perf]
