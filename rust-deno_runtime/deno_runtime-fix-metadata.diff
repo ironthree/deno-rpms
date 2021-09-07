@@ -1,7 +1,7 @@
---- deno_runtime-0.15.1/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ deno_runtime-0.15.1/Cargo.toml	2021-06-07T09:47:04.904240+00:00
-@@ -184,14 +184,3 @@
- version = "0.2.1"
+--- deno_runtime-0.24.0/Cargo.toml	1970-01-01T00:00:01+00:00
++++ deno_runtime-0.24.0/Cargo.toml	2021-09-06T23:59:17.891569+00:00
+@@ -190,14 +190,3 @@
+ docsrs = []
  [target."cfg(unix)".dependencies.nix]
  version = "0.20.0"
 -[target."cfg(windows)".dependencies.fwdansi]
