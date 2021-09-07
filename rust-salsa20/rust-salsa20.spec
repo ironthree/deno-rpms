@@ -5,7 +5,7 @@
 %global crate salsa20
 
 Name:           rust-%{crate}
-Version:        0.9.0
+Version:        0.8.1
 Release:        1%{?dist}
 Summary:        Salsa20 Stream Cipher
 
@@ -79,6 +79,18 @@ which use "hsalsa20" feature of "%{crate}" crate.
 %files       -n %{name}+hsalsa20-devel
 %ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
 
+%package     -n %{name}+xsalsa20-devel
+Summary:        %{summary}
+BuildArch:      noarch
+
+%description -n %{name}+xsalsa20-devel %{_description}
+
+This package contains library source intended for building other packages
+which use "xsalsa20" feature of "%{crate}" crate.
+
+%files       -n %{name}+xsalsa20-devel
+%ghost %{cargo_registry}/%{crate}-%{version_no_tilde}/Cargo.toml
+
 %package     -n %{name}+zeroize-devel
 Summary:        %{summary}
 BuildArch:      noarch
@@ -112,5 +124,5 @@ find -name "*.rs" -executable -exec chmod -x {} +
 %endif
 
 %changelog
-* Tue Sep 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.9.0-1
+* Tue Sep 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.8.1-1
 - Initial package
