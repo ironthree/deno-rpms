@@ -1,0 +1,7 @@
+--- lru-0.6.6/Cargo.toml	1970-01-01T00:00:01+00:00
++++ lru-0.6.6/Cargo.toml	2021-09-07T13:50:39.706519+00:00
+@@ -31,4 +31,3 @@
+ 
+ [features]
+ default = ["hashbrown"]
+-nightly = ["hashbrown", "hashbrown/nightly"]
