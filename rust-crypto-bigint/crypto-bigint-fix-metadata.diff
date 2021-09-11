@@ -1,0 +1,21 @@
+--- crypto-bigint-0.2.6/Cargo.toml	1970-01-01T00:00:00+00:00
++++ crypto-bigint-0.2.6/Cargo.toml	2021-09-11T10:04:22.538781+00:00
+@@ -32,17 +32,12 @@
+ version = "0.6"
+ optional = true
+ 
+-[dependencies.rlp]
+-version = "0.5"
+-optional = true
+-default-features = false
+-
+ [dependencies.subtle]
+ version = "2.4"
+ default-features = false
+ 
+ [dependencies.zeroize]
+-version = ">=1, <1.5"
++version = "1"
+ optional = true
+ default-features = false
+ [dev-dependencies.hex-literal]

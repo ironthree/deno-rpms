@@ -5,7 +5,7 @@
 %global crate crypto-bigint
 
 Name:           rust-%{crate}
-Version:        0.2.5
+Version:        0.2.6
 Release:        1%{?dist}
 Summary:        Pure Rust bigint implementation for use in cryptographic applications
 
@@ -13,6 +13,10 @@ Summary:        Pure Rust bigint implementation for use in cryptographic applica
 License:        ASL 2.0 or MIT
 URL:            https://crates.io/crates/crypto-bigint
 Source:         %{crates_source}
+# Initial patched metadata
+# * drop optional rlp dependency (not packaged yet)
+# * relax zeroize dependency
+Patch0:         crypto-bigint-fix-metadata.diff
 
 ExclusiveArch:  %{rust_arches}
 %if %{__cargo_skip_build}
@@ -133,5 +137,8 @@ which use "zeroize" feature of "%{crate}" crate.
 %endif
 
 %changelog
+* Sat Sep 11 2021 Fabio Valentini <decathorpe@gmail.com> - 0.2.6-1
+- Update to version 0.2.6.
+
 * Tue Sep 07 2021 Fabio Valentini <decathorpe@gmail.com> - 0.2.5-1
 - Initial package
