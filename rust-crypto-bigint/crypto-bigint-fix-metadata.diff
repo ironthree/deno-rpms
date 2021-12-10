@@ -1,5 +1,5 @@
---- crypto-bigint-0.2.6/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ crypto-bigint-0.2.6/Cargo.toml	2021-09-11T10:04:22.538781+00:00
+--- crypto-bigint-0.2.11/Cargo.toml	1970-01-01T00:00:01+00:00
++++ crypto-bigint-0.2.11/Cargo.toml	2021-12-10T16:22:13.642298+00:00
 @@ -32,17 +32,12 @@
  version = "0.6"
  optional = true
