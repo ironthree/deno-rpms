@@ -1,6 +1,6 @@
---- ast_node-0.7.3/Cargo.toml	1970-01-01T00:00:00+00:00
-+++ ast_node-0.7.3/Cargo.toml	2021-04-22T15:51:02.637624+00:00
-@@ -23,7 +23,7 @@
+--- ast_node-0.7.6/Cargo.toml	1970-01-01T00:00:01+00:00
++++ ast_node-0.7.6/Cargo.toml	2022-01-06T21:49:53.862951+00:00
+@@ -22,7 +22,7 @@
  [lib]
  proc-macro = true
  [dependencies.darling]
